@@ -21,5 +21,6 @@ module LemonSqueezy
   autoload :Product, "lemon_squeezy/objects/product"
   autoload :Variant, "lemon_squeezy/objects/variant"
   autoload :Order, "lemon_squeezy/objects/order"
+  autoload :OrderItem, "lemon_squeezy/objects/order_item"
   
 end
