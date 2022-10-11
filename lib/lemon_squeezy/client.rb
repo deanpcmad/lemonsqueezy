@@ -16,6 +16,10 @@ module LemonSqueezy
       StoresResource.new(self)
     end
 
+    def products
+      ProductsResource.new(self)
+    end
+
     def connection
       @connection ||= Faraday.new(BASE_URL) do |conn|
         conn.request :authorization, :Bearer, access_token
