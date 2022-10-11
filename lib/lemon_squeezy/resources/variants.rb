@@ -1,8 +1,8 @@
 module LemonSqueezy
   class VariantsResource < Resource
 
-    def list
-      response = get_request("variants")
+    def list(**params)
+      response = get_request("variants", params: params)
       Collection.from_response(response, type: Variant)
     end
 

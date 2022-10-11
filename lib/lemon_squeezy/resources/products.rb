@@ -1,8 +1,8 @@
 module LemonSqueezy
   class ProductsResource < Resource
 
-    def list
-      response = get_request("products")
+    def list(**params)
+      response = get_request("products", params: params)
       Collection.from_response(response, type: Product)
     end
 
