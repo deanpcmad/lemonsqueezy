@@ -17,6 +17,7 @@ module LemonSqueezy
   autoload :VariantsResource, "lemon_squeezy/resources/variants"
   autoload :OrdersResource, "lemon_squeezy/resources/orders"
   autoload :SubscriptionsResource, "lemon_squeezy/resources/subscriptions"
+  autoload :DiscountsResource, "lemon_squeezy/resources/discounts"
 
   autoload :Store, "lemon_squeezy/objects/store"
   autoload :Product, "lemon_squeezy/objects/product"
@@ -24,5 +25,6 @@ module LemonSqueezy
   autoload :Order, "lemon_squeezy/objects/order"
   autoload :OrderItem, "lemon_squeezy/objects/order_item"
   autoload :Subscription, "lemon_squeezy/objects/subscription"
+  autoload :Discount, "lemon_squeezy/objects/discount"
   
 end
