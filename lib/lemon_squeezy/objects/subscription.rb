@@ -1,5 +1,5 @@
 module LemonSqueezy
-  class Variant < Object
+  class Subscription < Object
 
     def initialize(options = {})
       options.delete "relationships"
