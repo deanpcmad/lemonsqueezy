@@ -13,7 +13,9 @@ module LemonSqueezy
   autoload :Object, "lemon_squeezy/object"
 
   autoload :StoresResource, "lemon_squeezy/resources/stores"
+  autoload :ProductsResource, "lemon_squeezy/resources/products"
 
   autoload :Store, "lemon_squeezy/objects/store"
+  autoload :Product, "lemon_squeezy/objects/product"
   
 end
