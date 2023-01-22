@@ -20,6 +20,7 @@ module LemonSqueezy
   autoload :DiscountsResource, "lemon_squeezy/resources/discounts"
   autoload :LicenseKeysResource, "lemon_squeezy/resources/license_keys"
   autoload :FilesResource, "lemon_squeezy/resources/files"
+  autoload :CustomersResource, "lemon_squeezy/resources/customers"
 
   autoload :Store, "lemon_squeezy/objects/store"
   autoload :Product, "lemon_squeezy/objects/product"
@@ -30,5 +31,6 @@ module LemonSqueezy
   autoload :Discount, "lemon_squeezy/objects/discount"
   autoload :LicenseKey, "lemon_squeezy/objects/license_key"
   autoload :File, "lemon_squeezy/objects/file"
+  autoload :Customer, "lemon_squeezy/objects/customer"
   
 end
