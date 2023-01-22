@@ -61,8 +61,9 @@ module LemonSqueezy
         conn.request :authorization, :Bearer, access_token
 
         conn.headers = {
+          "User-Agent" => "lemonsqueezy/v#{VERSION} (github.com/deanpcmad/lemonsqueezy)",
           "Accept" => "application/vnd.api+json",
-          "Content-Type" => "application/vnd.api+json"
+          "Content-Type" => "application/vnd.api+json",
         } 
 
         conn.request :json
