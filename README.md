@@ -176,11 +176,34 @@ Firstly you'll need to create an API Access Token on your [settings page](https:
 @client.license_key_instances.list
 
 # Retrieves a list of License Key Instances for a license key
-@client.license_key_instances.list license_keyt_id: 123
+@client.license_key_instances.list license_key_id: 123
 
 # Retrieves a License Key Instance
 @client.license_key_instances.get id: "123"
 ```
+
+### Checkouts
+
+```ruby
+# Retrieves a list of Checkouts
+@client.checkouts.list
+
+# Retrieves a list of Checkouts for a store
+@client.checkouts.list store_id: 123
+
+# Retrieves a list of Checkouts for a variant
+@client.checkouts.list variant_id: 123
+
+# Retrieves a Checkout
+@client.checkouts.get id: "123"
+
+# Creates a Checkout
+# View docs for more info: https://docs.lemonsqueezy.com/api/checkouts#create-a-checkout
+# store_id and variant_id are required
+# Any other parameters are send as "attributes" to the API
+@client.checkouts.create store_id: 123, variant_id: 321, custom_price: 500, product_options: {name: "a test name"}
+```
+
 
 ## Contributing
 

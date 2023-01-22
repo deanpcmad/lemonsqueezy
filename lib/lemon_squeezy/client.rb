@@ -52,6 +52,10 @@ module LemonSqueezy
       LicenseKeyInstancesResource.new(self)
     end
 
+    def checkouts
+      CheckoutsResource.new(self)
+    end
+
     def connection
       @connection ||= Faraday.new(BASE_URL) do |conn|
         conn.request :authorization, :Bearer, access_token
