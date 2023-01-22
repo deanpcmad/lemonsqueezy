@@ -169,6 +169,19 @@ Firstly you'll need to create an API Access Token on your [settings page](https:
 @client.customers.get id: "123"
 ```
 
+### License Key Instances
+
+```ruby
+# Retrieves a list of License Key Instances
+@client.license_key_instances.list
+
+# Retrieves a list of License Key Instances for a license key
+@client.license_key_instances.list license_keyt_id: 123
+
+# Retrieves a License Key Instance
+@client.license_key_instances.get id: "123"
+```
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/deanpcmad/lemonsqueezy.
