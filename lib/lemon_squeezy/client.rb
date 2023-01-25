@@ -32,6 +32,10 @@ module LemonSqueezy
       SubscriptionsResource.new(self)
     end
 
+    def subscription_invoices
+      SubscriptionInvoicesResource.new(self)
+    end
+
     def discounts
       DiscountsResource.new(self)
     end
