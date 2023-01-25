@@ -114,6 +114,19 @@ Firstly you'll need to create an API Access Token on your [settings page](https:
 @client.subscriptions.change_plan id: 123, plan_id: 111, variant_id: 111
 ```
 
+### Subscription Invoices
+
+```ruby
+# Retrieves a list of Subscription Invoices
+@client.subscription_invoices.list
+
+# Retrieves a list of Subscription Invoices for a specified Store
+@client.subscription_invoices.list store_id: 123
+
+# Retrieves a Subscription Invoice
+@client.subscription_invoices.get id: "123"
+```
+
 ### Discounts
 
 ```ruby
