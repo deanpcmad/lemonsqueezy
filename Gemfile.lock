@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    lemonsqueezy (0.2.1)
+    lemonsqueezy (0.2.2)
       faraday (~> 2.0)
 
 GEM
