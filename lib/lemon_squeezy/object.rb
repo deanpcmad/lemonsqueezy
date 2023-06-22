@@ -3,7 +3,13 @@ require "ostruct"
 module LemonSqueezy
   class Object < OpenStruct
     def initialize(attributes)
-      super to_ostruct(attributes)
+      ostruct = to_ostruct(attributes)
+
+      if ostruct.is_a?(Array)
+        ostruct.map { |obj| super(obj) }
+      else
+        super(ostruct)
+      end
     end
 
     def to_ostruct(obj)
