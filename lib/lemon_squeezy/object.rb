@@ -7,10 +7,17 @@ module LemonSqueezy
       attributes.delete "relationships"
       attributes.delete "links"
 
-      # Add ID from response to attributes
-      attributes["attributes"]["id"] = attributes["id"]
+      attrs = {}
 
-      super to_ostruct(attributes["attributes"])
+      if attributes["attributes"]
+        # Add ID from response to attributes
+        attrs[:id] = attributes["id"] if attributes["id"]
+        attrs.merge!(attributes["attributes"])
+      else
+        attrs.merge!(attributes)
+      end
+
+      super to_ostruct(attrs)
     end
 
     def to_ostruct(obj)
