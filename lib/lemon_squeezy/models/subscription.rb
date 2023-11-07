@@ -13,6 +13,19 @@ module LemonSqueezy
         Subscription.new(response.body["data"]) if response.success?
       end
 
+      def update(id:, **attributes)
+        body = {
+          data: {
+            type: "subscriptions",
+            id: id.to_s,
+            attributes: attributes
+          }
+        }
+
+        response = Client.patch_request("subscriptions/#{id}", body: body.to_json)
+        Subscription.new(response.body["data"]) if response.success?
+      end
+
       # Kind: void or free
       def pause(id:, kind:, resumes_at: nil)
         body = {
@@ -45,17 +58,7 @@ module LemonSqueezy
       end
 
       def cancel(id:)
-        body = {
-          data: {
-            type: "subscriptions",
-            id: id.to_s,
-            attributes: {
-              cancelled: true
-            }
-          }
-        }
-
-        response = Client.patch_request("subscriptions/#{id}", body: body.to_json)
+        response = Client.delete_request("subscriptions/#{id}")
         Subscription.new(response.body["data"]) if response.success?
       end
 

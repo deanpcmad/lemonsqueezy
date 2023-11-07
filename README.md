@@ -134,6 +134,10 @@ LemonSqueezy::Subscription.list product_id: 123
 # Retrieves a Subscription
 LemonSqueezy::Subscription.retrieve id: 123
 
+# Updates a Subscription
+# https://docs.lemonsqueezy.com/api/subscriptions#update-a-subscription
+LemonSqueezy::Subscription.update id: 123, variant_id: 123
+
 # Pauses a Subscription
 # Kind should be void or free
 # resumes_at can be nil or an ISO-8601 formatted date-time string indicating
