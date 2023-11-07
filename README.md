@@ -2,7 +2,7 @@
 
 **This Library is a work in progress**
 
-This is a Ruby library for interacting with the Lemon Squeezy API.
+A Ruby library for the Lemon Squeezy API.
 
 ## Installation
 
@@ -14,22 +14,24 @@ gem "lemonsqueezy"
 
 ## Usage
 
-### Set Access Token
+### Set API Key
 
-Firstly you'll need to create an API Access Token on your [settings page](https://app.lemonsqueezy.com/settings/api).
+Firstly you'll need to create an API Key on your [settings page](https://app.lemonsqueezy.com/settings/api).
 
 ```ruby
-@client = LemonSqueezy::Client.new(access_token: "")
+LemonSqueezy.configure do |config|
+  config.api_key = ENV["LEMON_SQUEEZY_API_KEY"]
+end
 ```
 
 ### Stores
 
 ```ruby
 # Retrieves a list of Stores
-@client.stores.list
+LemonSqueezy::Store.list
 
 # Retrieves a Store
-@client.stores.retrieve id: "123"
+LemonSqueezy::Store.retrieve id: "123"
 ```
 
 ### Products
