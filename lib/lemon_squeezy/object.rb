@@ -3,6 +3,10 @@ require "ostruct"
 module LemonSqueezy
   class Object < OpenStruct
     def initialize(attributes)
+      # Remove relationships and links from responses as they are not required
+      attributes.delete "relationships"
+      attributes.delete "links"
+
       super to_ostruct(attributes)
     end
 

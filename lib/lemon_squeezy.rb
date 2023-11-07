@@ -5,38 +5,36 @@ require "faraday"
 require_relative "lemon_squeezy/version"
 
 module LemonSqueezy
-  
+
+  autoload :Configuration, "lemon_squeezy/configuration"
   autoload :Client, "lemon_squeezy/client"
   autoload :Collection, "lemon_squeezy/collection"
   autoload :Error, "lemon_squeezy/error"
-  autoload :Resource, "lemon_squeezy/resource"
   autoload :Object, "lemon_squeezy/object"
 
-  autoload :StoresResource, "lemon_squeezy/resources/stores"
-  autoload :ProductsResource, "lemon_squeezy/resources/products"
-  autoload :VariantsResource, "lemon_squeezy/resources/variants"
-  autoload :OrdersResource, "lemon_squeezy/resources/orders"
-  autoload :SubscriptionsResource, "lemon_squeezy/resources/subscriptions"
-  autoload :SubscriptionInvoicesResource, "lemon_squeezy/resources/subscription_invoices"
-  autoload :DiscountsResource, "lemon_squeezy/resources/discounts"
-  autoload :LicenseKeysResource, "lemon_squeezy/resources/license_keys"
-  autoload :LicenseKeyInstancesResource, "lemon_squeezy/resources/license_key_instances"
-  autoload :FilesResource, "lemon_squeezy/resources/files"
-  autoload :CustomersResource, "lemon_squeezy/resources/customers"
-  autoload :CheckoutsResource, "lemon_squeezy/resources/checkouts"
+  class << self
+    attr_writer :config
+  end
 
-  autoload :Store, "lemon_squeezy/objects/store"
-  autoload :Product, "lemon_squeezy/objects/product"
-  autoload :Variant, "lemon_squeezy/objects/variant"
-  autoload :Order, "lemon_squeezy/objects/order"
-  autoload :OrderItem, "lemon_squeezy/objects/order_item"
-  autoload :Subscription, "lemon_squeezy/objects/subscription"
-  autoload :SubscriptionInvoice, "lemon_squeezy/objects/subscription_invoice"
-  autoload :Discount, "lemon_squeezy/objects/discount"
-  autoload :LicenseKey, "lemon_squeezy/objects/license_key"
-  autoload :LicenseKeyInstance, "lemon_squeezy/objects/license_key_instance"
-  autoload :File, "lemon_squeezy/objects/file"
-  autoload :Customer, "lemon_squeezy/objects/customer"
-  autoload :Checkout, "lemon_squeezy/objects/checkout"
-  
+  def self.configure
+    yield(config) if block_given?
+  end
+
+  def self.config
+    @config ||= Configuration.new
+  end
+
+  autoload :Store, "lemon_squeezy/models/store"
+  autoload :Product, "lemon_squeezy/models/product"
+  autoload :Variant, "lemon_squeezy/models/variant"
+  autoload :Order, "lemon_squeezy/models/order"
+  autoload :Subscription, "lemon_squeezy/models/subscription"
+  autoload :SubscriptionInvoice, "lemon_squeezy/models/subscription_invoice"
+  autoload :Discount, "lemon_squeezy/models/discount"
+  autoload :LicenseKey, "lemon_squeezy/models/license_key"
+  autoload :LicenseKeyInstance, "lemon_squeezy/models/license_key_instance"
+  autoload :File, "lemon_squeezy/models/file"
+  autoload :Customer, "lemon_squeezy/models/customer"
+  autoload :Checkout, "lemon_squeezy/models/checkout"
+
 end

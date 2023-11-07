@@ -15,6 +15,7 @@ GEM
     minitest (5.15.0)
     rake (13.0.6)
     ruby2_keywords (0.0.5)
+    vcr (6.2.0)
 
 PLATFORMS
   x86_64-linux
@@ -24,6 +25,7 @@ DEPENDENCIES
   lemonsqueezy!
   minitest (~> 5.0)
   rake (~> 13.0)
+  vcr
 
 BUNDLED WITH
    2.3.22
