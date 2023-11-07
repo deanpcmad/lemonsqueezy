@@ -29,7 +29,7 @@ Firstly you'll need to create an API Access Token on your [settings page](https:
 @client.stores.list
 
 # Retrieves a Store
-@client.stores.get id: "123"
+@client.stores.retrieve id: "123"
 ```
 
 ### Products
