@@ -34,6 +34,30 @@ LemonSqueezy::Store.list
 LemonSqueezy::Store.retrieve id: "123"
 ```
 
+### Customers
+
+```ruby
+# Retrieves a list of Customers
+LemonSqueezy::Customer.list
+
+# Retrieves a list of Customers for a store
+LemonSqueezy::Customer.list store_id: 123
+
+# Retrieves a list of Customers that contain the supplied email
+LemonSqueezy::Customer.list email: "test@hello.com"
+
+# Retrieves a Customer
+LemonSqueezy::Customer.retrieve id: "123"
+
+# Create a customer
+# https://docs.lemonsqueezy.com/api/customers#create-a-customer
+LemonSqueezy::Customer.create store_id: 123, name: "Customer name", email: "test@hello.com"
+
+# Update a customer
+# https://docs.lemonsqueezy.com/api/customers#update-a-customer
+LemonSqueezy::Customer.update id: 123, name: "Customer name", status: "archived"
+```
+
 ### Products
 
 ```ruby
@@ -166,22 +190,6 @@ LemonSqueezy::File.list
 
 # Retrieves a File
 LemonSqueezy::File.retrieve id: "123"
-```
-
-### Customers
-
-```ruby
-# Retrieves a list of Customers
-LemonSqueezy::Customer.list
-
-# Retrieves a list of Customers for a store
-LemonSqueezy::Customer.list store_id: 123
-
-# Retrieves a list of Customers that contain the supplied email
-LemonSqueezy::Customer.list email: "test@hello.com"
-
-# Retrieves a Customer
-LemonSqueezy::Customer.retrieve id: "123"
 ```
 
 ### License Key Instances

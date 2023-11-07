@@ -38,23 +38,25 @@ module LemonSqueezy
       def handle_response(response)
         case response.status
         when 400
-          raise Error, "Error 400: Your request was malformed. '#{response.body["error"]}'"
+          raise Error, "Error 400: Your request was malformed. '#{response.body["errors"]}'"
         when 401
-          raise Error, "Error 401: You did not supply valid authentication credentials. '#{response.body["error"]}'"
+          raise Error, "Error 401: You did not supply valid authentication credentials. '#{response.body["errors"]}'"
         when 403
-          raise Error, "Error 403: You are not allowed to perform that action. '#{response.body["error"]}'"
+          raise Error, "Error 403: You are not allowed to perform that action. '#{response.body["errors"]}'"
         when 404
-          raise Error, "Error 404: No results were found for your request. '#{response.body["error"]}'"
+          raise Error, "Error 404: No results were found for your request. '#{response.body["errors"]}'"
         when 409
-          raise Error, "Error 409: Your request was a conflict. '#{response.body["error"]}'"
+          raise Error, "Error 409: Your request was a conflict. '#{response.body["errors"]}'"
         when 429
-          raise Error, "Error 429: Your request exceeded the API rate limit. '#{response.body["error"]}'"
+          raise Error, "Error 429: Your request exceeded the API rate limit. '#{response.body["errors"]}'"
+        when 422
+          raise Error, "Error 422: Unprocessable Entity. '#{response.body["errors"]}'"
         when 500
-          raise Error, "Error 500: We were unable to perform the request due to server-side problems. '#{response.body["error"]}'"
+          raise Error, "Error 500: We were unable to perform the request due to server-side problems. '#{response.body["errors"]}'"
         when 503
-          raise Error, "Error 503: You have been rate limited for sending more than 20 requests per second. '#{response.body["error"]}'"
+          raise Error, "Error 503: You have been rate limited for sending more than 20 requests per second. '#{response.body["errors"]}'"
         when 501
-          raise Error, "Error 501: This resource has not been implemented. '#{response.body["error"]}'"
+          raise Error, "Error 501: This resource has not been implemented. '#{response.body["errors"]}'"
         when 204
           return true
         end
