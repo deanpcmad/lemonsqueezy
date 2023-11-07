@@ -170,6 +170,28 @@ LemonSqueezy::SubscriptionInvoice.list store_id: 123
 LemonSqueezy::SubscriptionInvoice.retrieve id: "123"
 ```
 
+### Subscription Items
+
+```ruby
+# Retrieves a list of Subscription Items
+LemonSqueezy::SubscriptionItem.list
+
+# Retrieves a list of Subscription Items for a specified Subscription
+LemonSqueezy::SubscriptionItem.list subscription_id: 123
+
+# Retrieves a Subscription Item
+LemonSqueezy::SubscriptionItem.retrieve id: "123"
+
+# Updates a Subscription Item
+# https://docs.lemonsqueezy.com/api/subscription-items#update-a-subscription-item
+LemonSqueezy::SubscriptionItem.update id: "123", quantity: 2
+
+# Retrieve subscription item's current usage
+# Returns 404 if the product/variant does not have usage based billing enabled
+# https://docs.lemonsqueezy.com/api/subscription-items#retrieve-a-subscription-item-s-current-usage
+LemonSqueezy::SubscriptionItem.current_usage id: "123"
+```
+
 ### Discounts
 
 ```ruby
