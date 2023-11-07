@@ -84,6 +84,19 @@ LemonSqueezy::Variant.list product_id: 123
 LemonSqueezy::Variant.retrieve id: "123"
 ```
 
+### Prices
+
+```ruby
+# Retrieves a list of Prices
+LemonSqueezy::Price.list
+
+# Retrieves a list of Prices for a Variant
+LemonSqueezy::Price.list variant_id: 123
+
+# Retrieves a Price
+LemonSqueezy::Price.retrieve id: "123"
+```
+
 ### Orders
 
 ```ruby

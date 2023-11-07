@@ -36,5 +36,6 @@ module LemonSqueezy
   autoload :File, "lemon_squeezy/models/file"
   autoload :Customer, "lemon_squeezy/models/customer"
   autoload :Checkout, "lemon_squeezy/models/checkout"
+  autoload :Price, "lemon_squeezy/models/price"
 
 end
