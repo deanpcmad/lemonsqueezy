@@ -7,14 +7,16 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
-    dotenv (2.7.6)
-    faraday (2.7.4)
-      faraday-net_http (>= 2.0, < 3.1)
-      ruby2_keywords (>= 0.0.4)
-    faraday-net_http (3.0.2)
-    minitest (5.15.0)
-    rake (13.0.6)
-    ruby2_keywords (0.0.5)
+    dotenv (2.8.1)
+    faraday (2.9.0)
+      faraday-net_http (>= 2.0, < 3.2)
+    faraday-net_http (3.1.0)
+      net-http
+    minitest (5.20.0)
+    net-http (0.4.1)
+      uri
+    rake (13.1.0)
+    uri (0.13.0)
     vcr (6.2.0)
 
 PLATFORMS
