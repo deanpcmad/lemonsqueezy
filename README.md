@@ -31,7 +31,7 @@ end
 LemonSqueezy::Store.list
 
 # Retrieves a Store
-LemonSqueezy::Store.retrieve id: "123"
+LemonSqueezy::Store.retrieve id: 123
 ```
 
 ### Customers
@@ -47,7 +47,7 @@ LemonSqueezy::Customer.list store_id: 123
 LemonSqueezy::Customer.list email: "test@hello.com"
 
 # Retrieves a Customer
-LemonSqueezy::Customer.retrieve id: "123"
+LemonSqueezy::Customer.retrieve id: 123
 
 # Create a customer
 # https://docs.lemonsqueezy.com/api/customers#create-a-customer
@@ -68,7 +68,7 @@ LemonSqueezy::Product.list
 LemonSqueezy::Product.list store_id: 123
 
 # Retrieves a Product
-LemonSqueezy::Product.retrieve id: "123"
+LemonSqueezy::Product.retrieve id: 123
 ```
 
 ### Product Variants
@@ -81,7 +81,7 @@ LemonSqueezy::Variant.list
 LemonSqueezy::Variant.list product_id: 123
 
 # Retrieves a Variant
-LemonSqueezy::Variant.retrieve id: "123"
+LemonSqueezy::Variant.retrieve id: 123
 ```
 
 ### Prices
@@ -94,7 +94,7 @@ LemonSqueezy::Price.list
 LemonSqueezy::Price.list variant_id: 123
 
 # Retrieves a Price
-LemonSqueezy::Price.retrieve id: "123"
+LemonSqueezy::Price.retrieve id: 123
 ```
 
 ### Orders
@@ -110,10 +110,10 @@ LemonSqueezy::Order.list product_id: 123
 LemonSqueezy::Order.list email: "hello@test.com"
 
 # Retrieves an Order
-LemonSqueezy::Order.retrieve id: "123"
+LemonSqueezy::Order.retrieve id: 123
 
 # Retrieves the items on an Order
-LemonSqueezy::Order.retrieve order_items: "123"
+LemonSqueezy::Order.retrieve order_items: 123
 ```
 
 ### Subscriptions
@@ -167,7 +167,7 @@ LemonSqueezy::SubscriptionInvoice.list
 LemonSqueezy::SubscriptionInvoice.list store_id: 123
 
 # Retrieves a Subscription Invoice
-LemonSqueezy::SubscriptionInvoice.retrieve id: "123"
+LemonSqueezy::SubscriptionInvoice.retrieve id: 123
 ```
 
 ### Subscription Items
@@ -180,16 +180,16 @@ LemonSqueezy::SubscriptionItem.list
 LemonSqueezy::SubscriptionItem.list subscription_id: 123
 
 # Retrieves a Subscription Item
-LemonSqueezy::SubscriptionItem.retrieve id: "123"
+LemonSqueezy::SubscriptionItem.retrieve id: 123
 
 # Updates a Subscription Item
 # https://docs.lemonsqueezy.com/api/subscription-items#update-a-subscription-item
-LemonSqueezy::SubscriptionItem.update id: "123", quantity: 2
+LemonSqueezy::SubscriptionItem.update id: 123, quantity: 2
 
 # Retrieve subscription item's current usage
 # Returns 404 if the product/variant does not have usage based billing enabled
 # https://docs.lemonsqueezy.com/api/subscription-items#retrieve-a-subscription-item-s-current-usage
-LemonSqueezy::SubscriptionItem.current_usage id: "123"
+LemonSqueezy::SubscriptionItem.current_usage id: 123
 ```
 
 ### Discounts
@@ -202,7 +202,7 @@ LemonSqueezy::Discount.list
 LemonSqueezy::Discount.list store_id: 123
 
 # Retrieves a Discount
-LemonSqueezy::Discount.retrieve id: "123"
+LemonSqueezy::Discount.retrieve id: 123
 ```
 
 ### License Keys
@@ -217,8 +217,8 @@ LemonSqueezy::LicenseKey.list store_id: 123
 # Retrieves a list of License Keys for an order
 LemonSqueezy::LicenseKey.list order_id: 123
 
-# Retrieves a Discount
-LemonSqueezy::LicenseKey.retrieve id: "123"
+# Retrieves a License Key
+LemonSqueezy::LicenseKey.retrieve id: 123
 ```
 
 ### Files
@@ -228,7 +228,7 @@ LemonSqueezy::LicenseKey.retrieve id: "123"
 LemonSqueezy::File.list
 
 # Retrieves a File
-LemonSqueezy::File.retrieve id: "123"
+LemonSqueezy::File.retrieve id: 123
 ```
 
 ### License Key Instances
@@ -241,7 +241,7 @@ LemonSqueezy::LicenseKeyInstances.list
 LemonSqueezy::LicenseKeyInstances.list license_key_id: 123
 
 # Retrieves a License Key Instance
-LemonSqueezy::LicenseKeyInstances.retrieve id: "123"
+LemonSqueezy::LicenseKeyInstances.retrieve id: 123
 ```
 
 ### Checkouts
@@ -257,7 +257,7 @@ LemonSqeezy::Checkout.list store_id: 123
 LemonSqeezy::Checkout.list variant_id: 123
 
 # Retrieves a Checkout
-LemonSqeezy::Checkout.retrieve id: "123"
+LemonSqeezy::Checkout.retrieve id: 123
 
 # Creates a Checkout
 # View docs for more info: https://docs.lemonsqueezy.com/api/checkouts#create-a-checkout
