@@ -219,6 +219,10 @@ LemonSqueezy::LicenseKey.list order_id: 123
 
 # Retrieves a License Key
 LemonSqueezy::LicenseKey.retrieve id: 123
+
+# Updates a License Key
+# https://docs.lemonsqueezy.com/api/license-keys#update-a-license-key
+LemonSqueezy::LicenseKey.update id: 123, activation_limit: 10, disabled: false
 ```
 
 ### Files
