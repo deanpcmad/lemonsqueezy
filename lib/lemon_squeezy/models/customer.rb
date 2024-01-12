@@ -43,7 +43,6 @@ module LemonSqueezy
             attributes: params
           }
         }
-        puts body.to_json
         response = Client.patch_request("customers/#{id}", body: body.to_json)
         Customer.new(response.body["data"]) if response.success?
       end
