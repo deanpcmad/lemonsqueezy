@@ -24,6 +24,7 @@ module LemonSqueezy
     @config ||= Configuration.new
   end
 
+  autoload :User, "lemon_squeezy/models/user"
   autoload :Store, "lemon_squeezy/models/store"
   autoload :Product, "lemon_squeezy/models/product"
   autoload :Variant, "lemon_squeezy/models/variant"

@@ -24,6 +24,13 @@ LemonSqueezy.configure do |config|
 end
 ```
 
+### User
+
+```ruby
+# Retrieve the authenticated user
+LemonSqueezy::User.me
+```
+
 ### Stores
 
 ```ruby
