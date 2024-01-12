@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.lemonsqueezy.com/v1/users/me
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - lemonsqueezy/v0.2.2 (github.com/deanpcmad/lemonsqueezy)
+      Accept:
+      - application/vnd.api+json
+      Content-Type:
+      - application/vnd.api+json
+      Authorization:
+      - Bearer <AUTHORIZATION>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Fri, 12 Jan 2024 19:18:48 GMT
+      content-type:
+      - application/vnd.api+json
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      access-control-allow-origin:
+      - "*"
+      cache-control:
+      - no-cache, private
+      x-ratelimit-limit:
+      - '300'
+      x-ratelimit-remaining:
+      - '299'
+      apigw-requestid:
+      - RcOH3jBwCYcEPSQ=
+      cf-cache-status:
+      - DYNAMIC
+      report-to:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=NhR6ZpyIv4mxSrBqroCKSTcfX3mfAq5dAcTNioRg3wSl32jCRxkl9WTfRlwfpGqCPlukzzC3FAbNPZ%2FGkqz3dDLzUZ4FK5DNF7jxHjJIsEKW4J7X%2B0dqH4yQf9tZCg4hk4dD%2FD63Qw%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      server:
+      - cloudflare
+      cf-ray:
+      - 8447bf579f80dcaf-LHR
+      content-encoding:
+      - gzip
+      alt-svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta":{"test_mode":true},"jsonapi":{"version":"1.0"},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/users\/1539071"},"data":{"type":"users","id":"1539071","attributes":{"name":"Dean
+        Dev","email":"dean@voupe.dev","color":"#00ACFF","avatar_url":"https:\/\/www.gravatar.com\/avatar\/4c0b621b50475ec07bf09b00bf219d5d?d=blank","has_custom_avatar":false,"createdAt":"2023-11-07T19:43:04.000000Z","updatedAt":"2023-11-07T21:50:48.000000Z"},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/users\/1539071"}}}'
+  recorded_at: Fri, 12 Jan 2024 19:18:48 GMT
+recorded_with: VCR 6.2.0

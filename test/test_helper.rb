@@ -18,15 +18,13 @@ LemonSqueezy.configure do |config|
 end
 
 class Minitest::Test
-  def stub_response(fixture:, status: 200, headers: {"Content-Type" => "application/json"})
-    [status, headers, File.read("test/fixtures/#{fixture}.json")]
+
+  def setup
+    VCR.insert_cassette(name)
   end
 
-  def stub_request(path, response:, body: {})
-    stubs = Faraday::Adapter::Test::Stubs.new
-    stubs.post("/api/#{path}") do
-      stub_response(fixture: response)
-    end
-    stubs
+  def teardown
+    VCR.eject_cassette
   end
+
 end
