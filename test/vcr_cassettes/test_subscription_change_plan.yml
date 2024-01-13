@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: patch
+    uri: https://api.lemonsqueezy.com/v1/subscriptions/176705
+    body:
+      encoding: UTF-8
+      string: '{"data":{"type":"subscriptions","id":"176705","attributes":{"product_id":128224,"variant_id":149091}}}'
+    headers:
+      User-Agent:
+      - lemonsqueezy/v0.2.2 (github.com/deanpcmad/lemonsqueezy)
+      Accept:
+      - application/vnd.api+json
+      Content-Type:
+      - application/vnd.api+json
+      Authorization:
+      - Bearer <AUTHORIZATION>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Sat, 13 Jan 2024 20:56:02 GMT
+      content-type:
+      - application/vnd.api+json
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      cache-control:
+      - no-cache, private
+      x-ratelimit-limit:
+      - '300'
+      x-ratelimit-remaining:
+      - '297'
+      access-control-allow-origin:
+      - "*"
+      apigw-requestid:
+      - RfvTcizXCYcEPEw=
+      cf-cache-status:
+      - DYNAMIC
+      report-to:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=gHXmF4gBHBhGoQcmDiuE1e49Q7n4vbPsz3pI1%2BeD8slOL8ISGYyDwzHMEIyWEfPopq66XMGsgl5OIQoxDpyNckdxoYpxbKr%2FFn927GAKhRVP1RlzvMn%2BEH1phi7ZmdZfFGIOyH%2FHeA%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      server:
+      - cloudflare
+      cf-ray:
+      - 84508b27bb47dcd3-LHR
+      content-encoding:
+      - gzip
+      alt-svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"jsonapi":{"version":"1.0"},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/subscriptions\/176705"},"data":{"type":"subscriptions","id":"176705","attributes":{"store_id":51385,"customer_id":1584868,"order_id":1541082,"order_item_id":1503859,"product_id":128224,"variant_id":149091,"product_name":"SaaS
+        Silver Plan","variant_name":"Default","user_name":"Dean Dev","user_email":"dean@voupe.dev","status":"active","status_formatted":"Active","card_brand":"visa","card_last_four":"4242","pause":null,"cancelled":false,"trial_ends_at":null,"billing_anchor":7,"first_subscription_item":{"id":139331,"subscription_id":176705,"price_id":144599,"quantity":1,"is_usage_based":false,"created_at":"2023-11-07T21:51:10.000000Z","updated_at":"2024-01-13T20:51:35.000000Z"},"urls":{"update_payment_method":"https:\/\/voupedev.lemonsqueezy.com\/subscription\/176705\/payment-details?expires=1705265762&signature=42204b3b6d14f5a0061f87db7ca60dadc1ea0d8ba9edc057651480f8a12eb0e7","customer_portal":"https:\/\/voupedev.lemonsqueezy.com\/billing?expires=1705200962&test_mode=1&user=1539071&signature=86b42ab9f0bee7d3b2351c31b237fec6191761474fe0badb144202bf8c976ecc"},"renews_at":"2024-02-07T21:51:08.000000Z","ends_at":null,"created_at":"2023-11-07T21:51:10.000000Z","updated_at":"2024-01-13T20:56:02.000000Z","test_mode":true},"relationships":{"store":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/subscriptions\/176705\/store","self":"https:\/\/api.lemonsqueezy.com\/v1\/subscriptions\/176705\/relationships\/store"}},"customer":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/subscriptions\/176705\/customer","self":"https:\/\/api.lemonsqueezy.com\/v1\/subscriptions\/176705\/relationships\/customer"}},"order":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/subscriptions\/176705\/order","self":"https:\/\/api.lemonsqueezy.com\/v1\/subscriptions\/176705\/relationships\/order"}},"order-item":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/subscriptions\/176705\/order-item","self":"https:\/\/api.lemonsqueezy.com\/v1\/subscriptions\/176705\/relationships\/order-item"}},"product":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/subscriptions\/176705\/product","self":"https:\/\/api.lemonsqueezy.com\/v1\/subscriptions\/176705\/relationships\/product"}},"variant":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/subscriptions\/176705\/variant","self":"https:\/\/api.lemonsqueezy.com\/v1\/subscriptions\/176705\/relationships\/variant"}},"subscription-items":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/subscriptions\/176705\/subscription-items","self":"https:\/\/api.lemonsqueezy.com\/v1\/subscriptions\/176705\/relationships\/subscription-items"}},"subscription-invoices":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/subscriptions\/176705\/subscription-invoices","self":"https:\/\/api.lemonsqueezy.com\/v1\/subscriptions\/176705\/relationships\/subscription-invoices"}}},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/subscriptions\/176705"}}}'
+  recorded_at: Sat, 13 Jan 2024 20:56:03 GMT
+recorded_with: VCR 6.2.0
