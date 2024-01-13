@@ -15,8 +15,8 @@ class PriceTest < Minitest::Test
 
     assert_equal LemonSqueezy::Collection, products.class
     assert_equal LemonSqueezy::Price, products.data.first.class
-    assert_equal 999, products.data.first.unit_price
-    assert_equal "year", products.data.first.renewal_interval_unit
+    assert_equal 1000, products.data.first.unit_price
+    assert_equal "month", products.data.first.renewal_interval_unit
   end
 
   def test_price_retrieve

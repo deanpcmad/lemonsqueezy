@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.lemonsqueezy.com/v1/customers?email=test%40voupe.dev
+    uri: https://api.lemonsqueezy.com/v1/customers?filter%5Bemail%5D=test%40voupe.dev
     body:
       encoding: US-ASCII
       string: ''
@@ -21,44 +21,40 @@ http_interactions:
       message: OK
     headers:
       date:
-      - Fri, 12 Jan 2024 19:27:42 GMT
+      - Sat, 13 Jan 2024 21:01:02 GMT
       content-type:
       - application/vnd.api+json
       transfer-encoding:
       - chunked
       connection:
       - keep-alive
-      x-ratelimit-limit:
-      - '300'
-      x-ratelimit-remaining:
-      - '298'
       access-control-allow-origin:
       - "*"
       cache-control:
       - no-cache, private
+      x-ratelimit-limit:
+      - '300'
+      x-ratelimit-remaining:
+      - '294'
       apigw-requestid:
-      - RcPbOjDDCYcEJFg=
+      - RfwCVgsqiYcEMYw=
       cf-cache-status:
       - DYNAMIC
       report-to:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=4b%2BWgjETynLZS%2BtlSxanXIjhz3A62gMFnY34Ss1Jrh6jZCnURsuuqN5gHKiJTlqdi7Q2coD2nZdTwjWnUW%2FsS9xAe0Dr0d92P%2FTyl3bBxiIsHd3jeSQ5vfmQqBzcWoIyjHjlgSGalw%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=AooHYhFjF0sYK3QjK2Y5yHM12tS5n6LQCTEsbQLFJXNn%2FqXTR7EbkXPHgiALMZonyHTMvA2CM3jo6LodqzD6oXbQaoxSI3gJYMo5kp089GdAQxIWWTPjFebNP0Z3AqHTMoK6VPcruA%3D%3D"}],"group":"cf-nel","max_age":604800}'
       nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       server:
       - cloudflare
       cf-ray:
-      - 8447cc5d4f6d7705-LHR
+      - 84509279e970dd7c-LHR
       content-encoding:
       - gzip
       alt-svc:
       - h3=":443"; ma=86400
     body:
       encoding: ASCII-8BIT
-      string: '{"meta":{"page":{"currentPage":1,"from":1,"lastPage":1,"perPage":10,"to":4,"total":4}},"jsonapi":{"version":"1.0"},"links":{"first":"https:\/\/api.lemonsqueezy.com\/v1\/customers?page%5Bnumber%5D=1&page%5Bsize%5D=10&sort=-createdAt","last":"https:\/\/api.lemonsqueezy.com\/v1\/customers?page%5Bnumber%5D=1&page%5Bsize%5D=10&sort=-createdAt"},"data":[{"type":"customers","id":"2093960","attributes":{"store_id":51385,"name":"Dean
-        Dev Again","email":"test@voupe.dev","status":"subscribed","city":null,"region":null,"country":null,"total_revenue_currency":0,"mrr":0,"status_formatted":"Subscribed","country_formatted":null,"total_revenue_currency_formatted":"\u00a30.00","mrr_formatted":"\u00a30.00","urls":{"customer_portal":null},"created_at":"2024-01-12T19:25:45.000000Z","updated_at":"2024-01-12T19:25:45.000000Z","test_mode":true},"relationships":{"store":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/customers\/2093960\/store","self":"https:\/\/api.lemonsqueezy.com\/v1\/customers\/2093960\/relationships\/store"}},"orders":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/customers\/2093960\/orders","self":"https:\/\/api.lemonsqueezy.com\/v1\/customers\/2093960\/relationships\/orders"}},"subscriptions":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/customers\/2093960\/subscriptions","self":"https:\/\/api.lemonsqueezy.com\/v1\/customers\/2093960\/relationships\/subscriptions"}},"license-keys":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/customers\/2093960\/license-keys","self":"https:\/\/api.lemonsqueezy.com\/v1\/customers\/2093960\/relationships\/license-keys"}}},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/customers\/2093960"}},{"type":"customers","id":"1584868","attributes":{"store_id":51385,"name":"Dean
-        Dev","email":"dean@voupe.dev","status":"subscribed","city":null,"region":null,"country":"GB","total_revenue_currency":0,"mrr":3000,"status_formatted":"Subscribed","country_formatted":"United
-        Kingdom","total_revenue_currency_formatted":"\u00a30.00","mrr_formatted":"\u00a330.00","urls":{"customer_portal":"https:\/\/voupedev.lemonsqueezy.com\/billing?expires=1705109262&test_mode=1&user=1539071&signature=2680b4ec6618d94f137015f753b05906f3bce09efe1991fd806150dd5589d86b"},"created_at":"2023-11-07T21:51:11.000000Z","updated_at":"2023-11-07T21:52:08.000000Z","test_mode":true},"relationships":{"store":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/customers\/1584868\/store","self":"https:\/\/api.lemonsqueezy.com\/v1\/customers\/1584868\/relationships\/store"}},"orders":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/customers\/1584868\/orders","self":"https:\/\/api.lemonsqueezy.com\/v1\/customers\/1584868\/relationships\/orders"}},"subscriptions":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/customers\/1584868\/subscriptions","self":"https:\/\/api.lemonsqueezy.com\/v1\/customers\/1584868\/relationships\/subscriptions"}},"license-keys":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/customers\/1584868\/license-keys","self":"https:\/\/api.lemonsqueezy.com\/v1\/customers\/1584868\/relationships\/license-keys"}}},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/customers\/1584868"}},{"type":"customers","id":"1584617","attributes":{"store_id":51385,"name":"Test
-        Customer 2","email":"dean+test1@voupe.dev","status":"archived","city":null,"region":null,"country":null,"total_revenue_currency":0,"mrr":0,"status_formatted":"Archived","country_formatted":null,"total_revenue_currency_formatted":"\u00a30.00","mrr_formatted":"\u00a30.00","urls":{"customer_portal":null},"created_at":"2023-11-07T20:31:43.000000Z","updated_at":"2023-11-07T21:19:30.000000Z","test_mode":true},"relationships":{"store":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/customers\/1584617\/store","self":"https:\/\/api.lemonsqueezy.com\/v1\/customers\/1584617\/relationships\/store"}},"orders":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/customers\/1584617\/orders","self":"https:\/\/api.lemonsqueezy.com\/v1\/customers\/1584617\/relationships\/orders"}},"subscriptions":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/customers\/1584617\/subscriptions","self":"https:\/\/api.lemonsqueezy.com\/v1\/customers\/1584617\/relationships\/subscriptions"}},"license-keys":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/customers\/1584617\/license-keys","self":"https:\/\/api.lemonsqueezy.com\/v1\/customers\/1584617\/relationships\/license-keys"}}},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/customers\/1584617"}},{"type":"customers","id":"1584616","attributes":{"store_id":51385,"name":"Dean
-        Dev Updated","email":"dean+test@voupe.dev","status":"subscribed","city":null,"region":null,"country":null,"total_revenue_currency":0,"mrr":0,"status_formatted":"Subscribed","country_formatted":null,"total_revenue_currency_formatted":"\u00a30.00","mrr_formatted":"\u00a30.00","urls":{"customer_portal":null},"created_at":"2023-11-07T20:31:27.000000Z","updated_at":"2024-01-12T19:26:54.000000Z","test_mode":true},"relationships":{"store":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/customers\/1584616\/store","self":"https:\/\/api.lemonsqueezy.com\/v1\/customers\/1584616\/relationships\/store"}},"orders":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/customers\/1584616\/orders","self":"https:\/\/api.lemonsqueezy.com\/v1\/customers\/1584616\/relationships\/orders"}},"subscriptions":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/customers\/1584616\/subscriptions","self":"https:\/\/api.lemonsqueezy.com\/v1\/customers\/1584616\/relationships\/subscriptions"}},"license-keys":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/customers\/1584616\/license-keys","self":"https:\/\/api.lemonsqueezy.com\/v1\/customers\/1584616\/relationships\/license-keys"}}},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/customers\/1584616"}}]}'
-  recorded_at: Fri, 12 Jan 2024 19:27:41 GMT
+      string: '{"meta":{"page":{"currentPage":1,"from":1,"lastPage":1,"perPage":10,"to":1,"total":1}},"jsonapi":{"version":"1.0"},"links":{"first":"https:\/\/api.lemonsqueezy.com\/v1\/customers?filter%5Bemail%5D=test%40voupe.dev&page%5Bnumber%5D=1&page%5Bsize%5D=10&sort=-createdAt","last":"https:\/\/api.lemonsqueezy.com\/v1\/customers?filter%5Bemail%5D=test%40voupe.dev&page%5Bnumber%5D=1&page%5Bsize%5D=10&sort=-createdAt"},"data":[{"type":"customers","id":"2093960","attributes":{"store_id":51385,"name":"Dean
+        Dev Again","email":"test@voupe.dev","status":"subscribed","city":null,"region":null,"country":null,"total_revenue_currency":0,"mrr":0,"status_formatted":"Subscribed","country_formatted":null,"total_revenue_currency_formatted":"\u00a30.00","mrr_formatted":"\u00a30.00","urls":{"customer_portal":null},"created_at":"2024-01-12T19:25:45.000000Z","updated_at":"2024-01-12T19:25:45.000000Z","test_mode":true},"relationships":{"store":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/customers\/2093960\/store","self":"https:\/\/api.lemonsqueezy.com\/v1\/customers\/2093960\/relationships\/store"}},"orders":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/customers\/2093960\/orders","self":"https:\/\/api.lemonsqueezy.com\/v1\/customers\/2093960\/relationships\/orders"}},"subscriptions":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/customers\/2093960\/subscriptions","self":"https:\/\/api.lemonsqueezy.com\/v1\/customers\/2093960\/relationships\/subscriptions"}},"license-keys":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/customers\/2093960\/license-keys","self":"https:\/\/api.lemonsqueezy.com\/v1\/customers\/2093960\/relationships\/license-keys"}}},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/customers\/2093960"}}]}'
+  recorded_at: Sat, 13 Jan 2024 21:01:03 GMT
 recorded_with: VCR 6.2.0

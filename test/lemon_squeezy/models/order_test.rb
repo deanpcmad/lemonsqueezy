@@ -18,8 +18,8 @@ class OrderTest < Minitest::Test
     assert_equal "Dean Dev", orders.data.first.user_name
   end
 
-  def test_order_list_by_email
-    orders = LemonSqueezy::Order.list email: "test@voupe.dev"
+  def test_order_list_by_user_email
+    orders = LemonSqueezy::Order.list user_email: "dean@voupe.dev"
 
     assert_equal LemonSqueezy::Collection, orders.class
     assert_equal LemonSqueezy::Order, orders.data.first.class
