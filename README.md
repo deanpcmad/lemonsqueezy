@@ -173,6 +173,9 @@ LemonSqueezy::SubscriptionInvoice.list
 # Retrieves a list of Subscription Invoices for a specified Store
 LemonSqueezy::SubscriptionInvoice.list store_id: 123
 
+# Retrieves a list of Subscription Invoices for a specified Subscription
+LemonSqueezy::SubscriptionInvoice.list subscription_id: 123
+
 # Retrieves a Subscription Invoice
 LemonSqueezy::SubscriptionInvoice.retrieve id: 123
 ```
