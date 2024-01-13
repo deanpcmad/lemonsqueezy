@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.lemonsqueezy.com/v1/discounts?filter%5Bstore_id%5D=51385
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - lemonsqueezy/v0.2.2 (github.com/deanpcmad/lemonsqueezy)
+      Accept:
+      - application/vnd.api+json
+      Content-Type:
+      - application/vnd.api+json
+      Authorization:
+      - Bearer <AUTHORIZATION>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Sat, 13 Jan 2024 21:27:11 GMT
+      content-type:
+      - application/vnd.api+json
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      x-ratelimit-remaining:
+      - '297'
+      access-control-allow-origin:
+      - "*"
+      cache-control:
+      - no-cache, private
+      x-ratelimit-limit:
+      - '300'
+      apigw-requestid:
+      - Rfz3fgBYCYcEPwA=
+      cf-cache-status:
+      - DYNAMIC
+      report-to:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=%2BBBgv3F3rc8qZEIK5JKSeRKUNYQhVf026d32IkoVyG0%2F4zi9x7%2BxhQg%2FZ5KnygO%2FcX%2BzCyus7EExVS4igeMC3lr2ga5zeQNGFHU%2FESCaLHCEAPwifOmOO%2Fnb2n87%2BhHsvOp4GuHxew%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      server:
+      - cloudflare
+      cf-ray:
+      - 8450b8c94b1d776f-LHR
+      content-encoding:
+      - gzip
+      alt-svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta":{"page":{"currentPage":1,"from":1,"lastPage":1,"perPage":10,"to":1,"total":1}},"jsonapi":{"version":"1.0"},"links":{"first":"https:\/\/api.lemonsqueezy.com\/v1\/discounts?filter%5Bstore_id%5D=51385&page%5Bnumber%5D=1&page%5Bsize%5D=10&sort=createdAt","last":"https:\/\/api.lemonsqueezy.com\/v1\/discounts?filter%5Bstore_id%5D=51385&page%5Bnumber%5D=1&page%5Bsize%5D=10&sort=createdAt"},"data":[{"type":"discounts","id":"80554","attributes":{"store_id":51385,"name":"10%
+        Off","code":"10OFF","amount":10,"amount_type":"percent","is_limited_to_products":false,"is_limited_redemptions":false,"max_redemptions":0,"starts_at":null,"expires_at":null,"duration":"once","duration_in_months":1,"status":"published","status_formatted":"Published","created_at":"2024-01-13T21:26:29.000000Z","updated_at":"2024-01-13T21:26:39.000000Z","test_mode":true},"relationships":{"store":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/discounts\/80554\/store","self":"https:\/\/api.lemonsqueezy.com\/v1\/discounts\/80554\/relationships\/store"}},"variants":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/discounts\/80554\/variants","self":"https:\/\/api.lemonsqueezy.com\/v1\/discounts\/80554\/relationships\/variants"}},"discount-redemptions":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/discounts\/80554\/discount-redemptions","self":"https:\/\/api.lemonsqueezy.com\/v1\/discounts\/80554\/relationships\/discount-redemptions"}}},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/discounts\/80554"}}]}'
+  recorded_at: Sat, 13 Jan 2024 21:27:12 GMT
+recorded_with: VCR 6.2.0

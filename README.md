@@ -213,6 +213,13 @@ LemonSqueezy::Discount.list store_id: 123
 
 # Retrieves a Discount
 LemonSqueezy::Discount.retrieve id: 123
+
+# Create a Discount
+# https://docs.lemonsqueezy.com/api/discounts#create-a-discount
+LemonSqueezy::Discount.create store_id: 123, name: "20 Off", code: "20OFF", amount: 20, amount_type: "percent"
+
+# Delete a Discount
+LemonSqueezy::Discount.delete id: 123
 ```
 
 ### License Keys
