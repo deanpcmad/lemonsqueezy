@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.lemonsqueezy.com/v1/variants?product_id=128224
+    uri: https://api.lemonsqueezy.com/v1/variants?filter%5Bproduct_id%5D=128224
     body:
       encoding: US-ASCII
       string: ''
@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       date:
-      - Fri, 12 Jan 2024 19:32:23 GMT
+      - Sat, 13 Jan 2024 20:29:58 GMT
       content-type:
       - application/vnd.api+json
       transfer-encoding:
@@ -31,31 +31,29 @@ http_interactions:
       x-ratelimit-limit:
       - '300'
       x-ratelimit-remaining:
-      - '296'
+      - '298'
       access-control-allow-origin:
       - "*"
       cache-control:
       - no-cache, private
       apigw-requestid:
-      - RcQHMgVxiYcEPlw=
+      - RfrfCjx7iYcEP6w=
       cf-cache-status:
       - DYNAMIC
       report-to:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=nHaWQxYcGwT9V%2F%2FTrF01H1oVcwlqeZMQSDf0sKPxfM4gEITS7ULGWSILxcWyGOSoxKk4h1cpzCOY4gfi%2FR2l1%2FhO%2F1B5oDRT7Y1VEMvLKT3t9n%2FWR8LTA0%2BeEs7Q2ixO5mYWBSZGVA%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=W6PodoXputn2%2BScyXbfLMAy5ujg5JlKIdPxsWB7yhpI1rZyddChAsGlzfPdQ5J1B42ZPw0d58%2BZAmaJ5WrSO3Pbr2l1bYQWZY84uPmhmfZre8kkyWMRIbs2CWuBJy026SVym37V7fQ%3D%3D"}],"group":"cf-nel","max_age":604800}'
       nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       server:
       - cloudflare
       cf-ray:
-      - 8447d33d4aba7705-LHR
+      - 845064f60a3fdd3b-LHR
       content-encoding:
       - gzip
       alt-svc:
       - h3=":443"; ma=86400
     body:
       encoding: ASCII-8BIT
-      string: '{"meta":{"page":{"currentPage":1,"from":1,"lastPage":1,"perPage":10,"to":5,"total":5}},"jsonapi":{"version":"1.0"},"links":{"first":"https:\/\/api.lemonsqueezy.com\/v1\/variants?page%5Bnumber%5D=1&page%5Bsize%5D=10&sort=sort","last":"https:\/\/api.lemonsqueezy.com\/v1\/variants?page%5Bnumber%5D=1&page%5Bsize%5D=10&sort=sort"},"data":[{"type":"variants","id":"149091","attributes":{"price":1000,"is_subscription":true,"interval":"month","interval_count":1,"has_free_trial":false,"trial_interval":"day","trial_interval_count":30,"pay_what_you_want":false,"min_price":0,"suggested_price":0,"product_id":128224,"name":"Default","slug":"9125b2b8-574a-4597-9a70-82e4c4943b6c","description":null,"has_license_keys":false,"license_activation_limit":5,"is_license_limit_unlimited":false,"license_length_value":1,"license_length_unit":"years","is_license_length_unlimited":false,"sort":1,"status":"pending","status_formatted":"Pending","created_at":"2023-11-07T19:47:50.000000Z","updated_at":"2023-11-07T19:47:50.000000Z","test_mode":true},"relationships":{"product":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/variants\/149091\/product","self":"https:\/\/api.lemonsqueezy.com\/v1\/variants\/149091\/relationships\/product"}},"files":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/variants\/149091\/files","self":"https:\/\/api.lemonsqueezy.com\/v1\/variants\/149091\/relationships\/files"}},"price-model":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/variants\/149091\/price-model","self":"https:\/\/api.lemonsqueezy.com\/v1\/variants\/149091\/relationships\/price-model"}}},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/variants\/149091"}},{"type":"variants","id":"149092","attributes":{"price":2000,"is_subscription":true,"interval":"month","interval_count":1,"has_free_trial":false,"trial_interval":"day","trial_interval_count":30,"pay_what_you_want":false,"min_price":0,"suggested_price":0,"product_id":128225,"name":"Default","slug":"7acc6d8a-6b79-4344-aa67-f47e8b1b6b04","description":null,"has_license_keys":false,"license_activation_limit":5,"is_license_limit_unlimited":false,"license_length_value":1,"license_length_unit":"years","is_license_length_unlimited":false,"sort":1,"status":"pending","status_formatted":"Pending","created_at":"2023-11-07T19:48:24.000000Z","updated_at":"2023-11-07T19:48:24.000000Z","test_mode":true},"relationships":{"product":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/variants\/149092\/product","self":"https:\/\/api.lemonsqueezy.com\/v1\/variants\/149092\/relationships\/product"}},"files":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/variants\/149092\/files","self":"https:\/\/api.lemonsqueezy.com\/v1\/variants\/149092\/relationships\/files"}},"price-model":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/variants\/149092\/price-model","self":"https:\/\/api.lemonsqueezy.com\/v1\/variants\/149092\/relationships\/price-model"}}},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/variants\/149092"}},{"type":"variants","id":"149127","attributes":{"price":1500,"is_subscription":false,"interval":"year","interval_count":1,"has_free_trial":false,"trial_interval":"day","trial_interval_count":30,"pay_what_you_want":false,"min_price":0,"suggested_price":0,"product_id":128221,"name":"Default","slug":"90a5cf82-e4bc-4588-ae7b-bdf8869e8af8","description":null,"has_license_keys":false,"license_activation_limit":5,"is_license_limit_unlimited":false,"license_length_value":1,"license_length_unit":"years","is_license_length_unlimited":false,"sort":1,"status":"pending","status_formatted":"Pending","created_at":"2023-11-07T21:28:11.000000Z","updated_at":"2023-11-07T21:28:11.000000Z","test_mode":true},"relationships":{"product":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/variants\/149127\/product","self":"https:\/\/api.lemonsqueezy.com\/v1\/variants\/149127\/relationships\/product"}},"files":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/variants\/149127\/files","self":"https:\/\/api.lemonsqueezy.com\/v1\/variants\/149127\/relationships\/files"}},"price-model":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/variants\/149127\/price-model","self":"https:\/\/api.lemonsqueezy.com\/v1\/variants\/149127\/relationships\/price-model"}}},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/variants\/149127"}},{"type":"variants","id":"211541","attributes":{"price":999,"is_subscription":false,"interval":"year","interval_count":1,"has_free_trial":false,"trial_interval":"day","trial_interval_count":30,"pay_what_you_want":false,"min_price":0,"suggested_price":0,"product_id":166175,"name":"Default","slug":"4e35c80b-d001-4af8-abe9-1d8cfa47e953","description":null,"has_license_keys":true,"license_activation_limit":5,"is_license_limit_unlimited":false,"license_length_value":1,"license_length_unit":"years","is_license_length_unlimited":false,"sort":1,"status":"pending","status_formatted":"Pending","created_at":"2024-01-12T19:07:46.000000Z","updated_at":"2024-01-12T19:08:08.000000Z","test_mode":true},"relationships":{"product":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/variants\/211541\/product","self":"https:\/\/api.lemonsqueezy.com\/v1\/variants\/211541\/relationships\/product"}},"files":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/variants\/211541\/files","self":"https:\/\/api.lemonsqueezy.com\/v1\/variants\/211541\/relationships\/files"}},"price-model":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/variants\/211541\/price-model","self":"https:\/\/api.lemonsqueezy.com\/v1\/variants\/211541\/relationships\/price-model"}}},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/variants\/211541"}},{"type":"variants","id":"149088","attributes":{"price":1500,"is_subscription":false,"interval":"year","interval_count":1,"has_free_trial":false,"trial_interval":"day","trial_interval_count":30,"pay_what_you_want":false,"min_price":0,"suggested_price":0,"product_id":128221,"name":"A
-        Test Item Variant","slug":"b3df613f-b51c-4907-accf-c4ae0666c62d","description":"<p>A
-        slightly different Test Item<\/p>","has_license_keys":false,"license_activation_limit":5,"is_license_limit_unlimited":false,"license_length_value":1,"license_length_unit":"years","is_license_length_unlimited":false,"sort":2,"status":"published","status_formatted":"Published","created_at":"2023-11-07T19:47:08.000000Z","updated_at":"2023-11-07T19:49:53.000000Z","test_mode":true},"relationships":{"product":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/variants\/149088\/product","self":"https:\/\/api.lemonsqueezy.com\/v1\/variants\/149088\/relationships\/product"}},"files":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/variants\/149088\/files","self":"https:\/\/api.lemonsqueezy.com\/v1\/variants\/149088\/relationships\/files"}},"price-model":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/variants\/149088\/price-model","self":"https:\/\/api.lemonsqueezy.com\/v1\/variants\/149088\/relationships\/price-model"}}},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/variants\/149088"}}]}'
-  recorded_at: Fri, 12 Jan 2024 19:32:23 GMT
+      string: '{"meta":{"page":{"currentPage":1,"from":1,"lastPage":1,"perPage":10,"to":1,"total":1}},"jsonapi":{"version":"1.0"},"links":{"first":"https:\/\/api.lemonsqueezy.com\/v1\/variants?filter%5Bproduct_id%5D=128224&page%5Bnumber%5D=1&page%5Bsize%5D=10&sort=sort","last":"https:\/\/api.lemonsqueezy.com\/v1\/variants?filter%5Bproduct_id%5D=128224&page%5Bnumber%5D=1&page%5Bsize%5D=10&sort=sort"},"data":[{"type":"variants","id":"149091","attributes":{"price":1000,"is_subscription":true,"interval":"month","interval_count":1,"has_free_trial":false,"trial_interval":"day","trial_interval_count":30,"pay_what_you_want":false,"min_price":0,"suggested_price":0,"product_id":128224,"name":"Default","slug":"9125b2b8-574a-4597-9a70-82e4c4943b6c","description":null,"has_license_keys":false,"license_activation_limit":5,"is_license_limit_unlimited":false,"license_length_value":1,"license_length_unit":"years","is_license_length_unlimited":false,"sort":1,"status":"pending","status_formatted":"Pending","created_at":"2023-11-07T19:47:50.000000Z","updated_at":"2023-11-07T19:47:50.000000Z","test_mode":true},"relationships":{"product":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/variants\/149091\/product","self":"https:\/\/api.lemonsqueezy.com\/v1\/variants\/149091\/relationships\/product"}},"files":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/variants\/149091\/files","self":"https:\/\/api.lemonsqueezy.com\/v1\/variants\/149091\/relationships\/files"}},"price-model":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/variants\/149091\/price-model","self":"https:\/\/api.lemonsqueezy.com\/v1\/variants\/149091\/relationships\/price-model"}}},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/variants\/149091"}}]}'
+  recorded_at: Sat, 13 Jan 2024 20:29:59 GMT
 recorded_with: VCR 6.2.0

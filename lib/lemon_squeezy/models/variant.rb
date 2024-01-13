@@ -4,7 +4,7 @@ module LemonSqueezy
     class << self
 
       def list(**params)
-        response = Client.get_request("variants", params: params)
+        response = Client.get_request("variants", params: {filter: params})
         Collection.from_response(response, type: Variant)
       end
 
