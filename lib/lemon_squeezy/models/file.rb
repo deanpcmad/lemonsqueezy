@@ -8,7 +8,7 @@ module LemonSqueezy
         Collection.from_response(response, type: File)
       end
 
-      def get(id:)
+      def retrieve(id:)
         response = Client.get_request("files/#{id}")
         File.new(response.body["data"]) if response.success?
       end
