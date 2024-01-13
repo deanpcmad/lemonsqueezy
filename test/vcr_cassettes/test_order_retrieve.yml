@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.lemonsqueezy.com/v1/orders/1899988
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - lemonsqueezy/v0.2.2 (github.com/deanpcmad/lemonsqueezy)
+      Accept:
+      - application/vnd.api+json
+      Content-Type:
+      - application/vnd.api+json
+      Authorization:
+      - Bearer <AUTHORIZATION>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Sat, 13 Jan 2024 19:58:56 GMT
+      content-type:
+      - application/vnd.api+json
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      x-ratelimit-limit:
+      - '300'
+      x-ratelimit-remaining:
+      - '299'
+      access-control-allow-origin:
+      - "*"
+      cache-control:
+      - no-cache, private
+      apigw-requestid:
+      - Rfm8AjszCYcEMBA=
+      cf-cache-status:
+      - DYNAMIC
+      report-to:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=t%2FX%2F79FNt9I9tjBuyhzJMpRjRCIl4SUxHsmS08yDMmnh4re7Gk63JOQPLQKEtQAgI6PQsdO8jfeDmpVUD7wVind4m51nG6m39k2pNMHUvcyXRKcgSI1%2B6GzwAhdV1rAUCUsSyBf4fA%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      server:
+      - cloudflare
+      cf-ray:
+      - 8450377dde1576d2-LHR
+      content-encoding:
+      - gzip
+      alt-svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"jsonapi":{"version":"1.0"},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1899988"},"data":{"type":"orders","id":"1899988","attributes":{"store_id":51385,"customer_id":1584868,"identifier":"08caeb7e-3c21-4e8a-a0bb-4cbf3e2659cf","order_number":513853,"user_name":"Dean
+        Dev","user_email":"dean@voupe.dev","currency":"GBP","currency_rate":"1.27487800","tax_name":"VAT","tax_rate":"20.00","status":"paid","status_formatted":"Paid","refunded":false,"refunded_at":null,"subtotal":999,"discount_total":0,"tax":200,"total":1199,"subtotal_usd":1274,"discount_total_usd":0,"tax_usd":255,"total_usd":1529,"subtotal_formatted":"\u00a39.99","discount_total_formatted":"\u00a30.00","tax_formatted":"\u00a32.00","total_formatted":"\u00a311.99","first_order_item":{"id":1861311,"order_id":1899988,"product_id":166175,"variant_id":211541,"price_id":233122,"product_name":"Test
+        License","variant_name":"Default","price":999,"quantity":1,"created_at":"2024-01-12T19:08:56.000000Z","updated_at":"2024-01-12T19:08:56.000000Z","test_mode":true},"urls":{"receipt":"https:\/\/app.lemonsqueezy.com\/my-orders\/08caeb7e-3c21-4e8a-a0bb-4cbf3e2659cf?signature=ae404f234e12ef16735c1c1c395efe5a32e06333ded7bb53cf3bca4148d77096"},"created_at":"2024-01-12T19:08:56.000000Z","updated_at":"2024-01-12T19:09:57.000000Z","test_mode":true},"relationships":{"store":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1899988\/store","self":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1899988\/relationships\/store"}},"customer":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1899988\/customer","self":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1899988\/relationships\/customer"}},"order-items":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1899988\/order-items","self":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1899988\/relationships\/order-items"}},"subscriptions":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1899988\/subscriptions","self":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1899988\/relationships\/subscriptions"}},"license-keys":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1899988\/license-keys","self":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1899988\/relationships\/license-keys"}},"discount-redemptions":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1899988\/discount-redemptions","self":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1899988\/relationships\/discount-redemptions"}}},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1899988"}}}'
+  recorded_at: Sat, 13 Jan 2024 19:58:56 GMT
+recorded_with: VCR 6.2.0
