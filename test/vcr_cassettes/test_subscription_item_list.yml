@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.lemonsqueezy.com/v1/subscription-items
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - lemonsqueezy/v0.2.2 (github.com/deanpcmad/lemonsqueezy)
+      Accept:
+      - application/vnd.api+json
+      Content-Type:
+      - application/vnd.api+json
+      Authorization:
+      - Bearer <AUTHORIZATION>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Sat, 13 Jan 2024 21:24:48 GMT
+      content-type:
+      - application/vnd.api+json
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      access-control-allow-origin:
+      - "*"
+      cache-control:
+      - no-cache, private
+      x-ratelimit-limit:
+      - '300'
+      x-ratelimit-remaining:
+      - '297'
+      apigw-requestid:
+      - RfzhDhkqiYcEJCg=
+      cf-cache-status:
+      - DYNAMIC
+      report-to:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=SuLQXiGzgcxLVR6pdFBGBRsba1o3aNrfTb27gUPy%2BeA%2B%2BeqoG77mH8rS6LTh94jrGY22qFeFwwYbPyOoCVyy2sWHySuJeiFsqGCFm9u2a7AZRk62v4Q90Y6fyai4ODTuyp%2F4O8KC0w%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      server:
+      - cloudflare
+      cf-ray:
+      - 8450b546b8fc7762-LHR
+      content-encoding:
+      - gzip
+      alt-svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta":{"page":{"currentPage":1,"from":1,"lastPage":1,"perPage":10,"to":2,"total":2}},"jsonapi":{"version":"1.0"},"links":{"first":"https:\/\/api.lemonsqueezy.com\/v1\/subscription-items?page%5Bnumber%5D=1&page%5Bsize%5D=10&sort=-created_at","last":"https:\/\/api.lemonsqueezy.com\/v1\/subscription-items?page%5Bnumber%5D=1&page%5Bsize%5D=10&sort=-created_at"},"data":[{"type":"subscription-items","id":"139332","attributes":{"subscription_id":176706,"price_id":144599,"quantity":1,"is_usage_based":false,"created_at":"2023-11-07T21:52:07.000000Z","updated_at":"2023-11-07T21:52:07.000000Z"},"relationships":{"subscription":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/subscription-items\/139332\/subscription","self":"https:\/\/api.lemonsqueezy.com\/v1\/subscription-items\/139332\/relationships\/subscription"}},"price":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/subscription-items\/139332\/price","self":"https:\/\/api.lemonsqueezy.com\/v1\/subscription-items\/139332\/relationships\/price"}},"usage-records":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/subscription-items\/139332\/usage-records","self":"https:\/\/api.lemonsqueezy.com\/v1\/subscription-items\/139332\/relationships\/usage-records"}}},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/subscription-items\/139332"}},{"type":"subscription-items","id":"139331","attributes":{"subscription_id":176705,"price_id":144597,"quantity":1,"is_usage_based":false,"created_at":"2023-11-07T21:51:10.000000Z","updated_at":"2024-01-13T20:56:04.000000Z"},"relationships":{"subscription":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/subscription-items\/139331\/subscription","self":"https:\/\/api.lemonsqueezy.com\/v1\/subscription-items\/139331\/relationships\/subscription"}},"price":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/subscription-items\/139331\/price","self":"https:\/\/api.lemonsqueezy.com\/v1\/subscription-items\/139331\/relationships\/price"}},"usage-records":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/subscription-items\/139331\/usage-records","self":"https:\/\/api.lemonsqueezy.com\/v1\/subscription-items\/139331\/relationships\/usage-records"}}},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/subscription-items\/139331"}}]}'
+  recorded_at: Sat, 13 Jan 2024 21:24:48 GMT
+recorded_with: VCR 6.2.0
