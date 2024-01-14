@@ -1,6 +1,4 @@
-# LemonSqueezy
-
-**This Library is a work in progress**
+# LemonSqueezy Ruby Library
 
 A Ruby library for the Lemon Squeezy API.
 
@@ -9,7 +7,7 @@ A Ruby library for the Lemon Squeezy API.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem "lemonsqueezy"
+gem "lemonsqueezy", "~> 1.0"
 ```
 
 ## Usage
