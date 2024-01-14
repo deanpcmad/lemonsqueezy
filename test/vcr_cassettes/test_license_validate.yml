@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.lemonsqueezy.com/v1/licenses/validate
+    body:
+      encoding: UTF-8
+      string: '{"license_key":"9AE0D3F6-A7CD-43C6-BF08-17208F679CD7","instance_id":null}'
+    headers:
+      User-Agent:
+      - lemonsqueezy/v0.2.2 (github.com/deanpcmad/lemonsqueezy)
+      Accept:
+      - application/vnd.api+json
+      Content-Type:
+      - application/vnd.api+json
+      Authorization:
+      - Bearer <AUTHORIZATION>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Sun, 14 Jan 2024 14:00:47 GMT
+      content-type:
+      - application/json
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      cache-control:
+      - no-cache, private
+      x-ratelimit-limit:
+      - '300'
+      x-ratelimit-remaining:
+      - '298'
+      access-control-allow-origin:
+      - "*"
+      apigw-requestid:
+      - RiFafiRZiYcEPlw=
+      cf-cache-status:
+      - DYNAMIC
+      report-to:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=SNZp6QGt6MeDvzka9581CAlxgmpHrMIAxjcSZR4kxnw4J3Z%2FxpFD6U6D0iZLqXLCzo1B2gvcBA4sHD3CEx%2FnpxS4BH3VzjXVR1S6NGMskAfc6LmC%2FlZZQ0yVF2fgKsUBHkAkYY%2FavQ%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      server:
+      - cloudflare
+      cf-ray:
+      - 845668404ed288a4-LHR
+      content-encoding:
+      - gzip
+      alt-svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"valid":true,"error":null,"license_key":{"id":385359,"status":"inactive","key":"9AE0D3F6-A7CD-43C6-BF08-17208F679CD7","activation_limit":5,"activation_usage":0,"created_at":"2024-01-14T13:53:25.000000Z","expires_at":"2025-01-14T13:53:25.000000Z","test_mode":true},"instance":null,"meta":{"store_id":51385,"order_id":1907633,"order_item_id":1868949,"variant_id":211541,"variant_name":"Default","product_id":166175,"product_name":"Test
+        License","customer_id":1584868,"customer_name":"Dean Dev","customer_email":"dean@voupe.dev"}}'
+  recorded_at: Sun, 14 Jan 2024 14:00:47 GMT
+recorded_with: VCR 6.2.0
