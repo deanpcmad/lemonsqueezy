@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.lemonsqueezy.com/v1/stores/51385
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - lemonsqueezy/v0.2.2 (github.com/deanpcmad/lemonsqueezy)
+      Accept:
+      - application/vnd.api+json
+      Content-Type:
+      - application/vnd.api+json
+      Authorization:
+      - Bearer <AUTHORIZATION>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Fri, 12 Jan 2024 19:22:44 GMT
+      content-type:
+      - application/vnd.api+json
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      cache-control:
+      - no-cache, private
+      x-ratelimit-limit:
+      - '300'
+      x-ratelimit-remaining:
+      - '298'
+      access-control-allow-origin:
+      - "*"
+      apigw-requestid:
+      - RcOsyichiYcEJIQ=
+      cf-cache-status:
+      - DYNAMIC
+      report-to:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=vgEsa%2BiTZsT8DLMQ6tiNYQ0LeoiF3pcvXfGFrUxN2UfuFhPtvc1fOpa1HYofWEI48k3svcCX%2BnorHqQ2TkzED1IGM1pNeli7Hk6AIAFBgKb0A6zl7vQGZCF6AFkz1YBmXQLwGNfKMQ%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      server:
+      - cloudflare
+      cf-ray:
+      - 8447c51c59bf3860-LHR
+      content-encoding:
+      - gzip
+      alt-svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"jsonapi":{"version":"1.0"},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/stores\/51385"},"data":{"type":"stores","id":"51385","attributes":{"name":"VoupeDev","slug":"voupedev","domain":"voupedev.lemonsqueezy.com","url":"https:\/\/voupedev.lemonsqueezy.com","avatar_url":"https:\/\/eu.ui-avatars.com\/api\/?name=VoupeDev&length=1&background=35389D&color=fff&size=64&rounded=true","plan":"free","country":"GB","country_nicename":"United
+        Kingdom","currency":"GBP","total_sales":0,"total_revenue":0,"thirty_day_sales":0,"thirty_day_revenue":0,"created_at":"2023-11-07T19:43:22.000000Z","updated_at":"2023-11-07T19:43:22.000000Z"},"relationships":{"products":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/stores\/51385\/products","self":"https:\/\/api.lemonsqueezy.com\/v1\/stores\/51385\/relationships\/products"}},"orders":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/stores\/51385\/orders","self":"https:\/\/api.lemonsqueezy.com\/v1\/stores\/51385\/relationships\/orders"}},"subscriptions":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/stores\/51385\/subscriptions","self":"https:\/\/api.lemonsqueezy.com\/v1\/stores\/51385\/relationships\/subscriptions"}},"discounts":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/stores\/51385\/discounts","self":"https:\/\/api.lemonsqueezy.com\/v1\/stores\/51385\/relationships\/discounts"}},"license-keys":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/stores\/51385\/license-keys","self":"https:\/\/api.lemonsqueezy.com\/v1\/stores\/51385\/relationships\/license-keys"}},"webhooks":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/stores\/51385\/webhooks","self":"https:\/\/api.lemonsqueezy.com\/v1\/stores\/51385\/relationships\/webhooks"}}},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/stores\/51385"}}}'
+  recorded_at: Fri, 12 Jan 2024 19:22:44 GMT
+recorded_with: VCR 6.2.0

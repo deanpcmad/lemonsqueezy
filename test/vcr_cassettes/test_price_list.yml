@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.lemonsqueezy.com/v1/prices
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - lemonsqueezy/v0.2.2 (github.com/deanpcmad/lemonsqueezy)
+      Accept:
+      - application/vnd.api+json
+      Content-Type:
+      - application/vnd.api+json
+      Authorization:
+      - Bearer <AUTHORIZATION>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Fri, 12 Jan 2024 19:35:41 GMT
+      content-type:
+      - application/vnd.api+json
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      x-ratelimit-remaining:
+      - '296'
+      access-control-allow-origin:
+      - "*"
+      cache-control:
+      - no-cache, private
+      x-ratelimit-limit:
+      - '300'
+      apigw-requestid:
+      - RcQmGjzdiYcEP2w=
+      cf-cache-status:
+      - DYNAMIC
+      report-to:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=7SsSbeGmwynaXb0GLREapR7jugMhGMglVhD8WCfpSIz9rDxGiG1ie0E1BgW9CxnpTInbnrRWQrFNfJQOMR7hUs1p3SFVvtjq73X4CEeMg%2Fat9PL4Q23n3xXgOOC1VtjzzZ60ZoCSuA%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      server:
+      - cloudflare
+      cf-ray:
+      - 8447d8119f617755-LHR
+      content-encoding:
+      - gzip
+      alt-svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta":{"page":{"currentPage":1,"from":1,"lastPage":1,"perPage":10,"to":10,"total":10}},"jsonapi":{"version":"1.0"},"links":{"first":"https:\/\/api.lemonsqueezy.com\/v1\/prices?page%5Bnumber%5D=1&page%5Bsize%5D=10&sort=-created_at","last":"https:\/\/api.lemonsqueezy.com\/v1\/prices?page%5Bnumber%5D=1&page%5Bsize%5D=10&sort=-created_at"},"data":[{"type":"prices","id":"233122","attributes":{"variant_id":211541,"category":"one_time","scheme":"standard","usage_aggregation":null,"unit_price":999,"package_size":1,"tiers":null,"renewal_interval_unit":"year","renewal_interval_quantity":1,"trial_interval_unit":null,"trial_interval_quantity":null,"min_price":null,"suggested_price":null,"tax_code":"eservice","created_at":"2024-01-12T19:08:08.000000Z","updated_at":"2024-01-12T19:08:08.000000Z"},"relationships":{"variant":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/prices\/233122\/variant","self":"https:\/\/api.lemonsqueezy.com\/v1\/prices\/233122\/relationships\/variant"}}},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/prices\/233122"}},{"type":"prices","id":"233121","attributes":{"variant_id":211541,"category":"one_time","scheme":"standard","usage_aggregation":null,"unit_price":999,"package_size":1,"tiers":null,"renewal_interval_unit":null,"renewal_interval_quantity":null,"trial_interval_unit":null,"trial_interval_quantity":null,"min_price":null,"suggested_price":null,"tax_code":"eservice","created_at":"2024-01-12T19:07:46.000000Z","updated_at":"2024-01-12T19:07:46.000000Z"},"relationships":{"variant":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/prices\/233121\/variant","self":"https:\/\/api.lemonsqueezy.com\/v1\/prices\/233121\/relationships\/variant"}}},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/prices\/233121"}},{"type":"prices","id":"144674","attributes":{"variant_id":149127,"category":"one_time","scheme":"standard","usage_aggregation":null,"unit_price":1500,"package_size":1,"tiers":null,"renewal_interval_unit":"year","renewal_interval_quantity":1,"trial_interval_unit":null,"trial_interval_quantity":null,"min_price":null,"suggested_price":null,"tax_code":"eservice","created_at":"2023-11-07T21:28:11.000000Z","updated_at":"2023-11-07T21:28:11.000000Z"},"relationships":{"variant":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/prices\/144674\/variant","self":"https:\/\/api.lemonsqueezy.com\/v1\/prices\/144674\/relationships\/variant"}}},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/prices\/144674"}},{"type":"prices","id":"144600","attributes":{"variant_id":149088,"category":"one_time","scheme":"standard","usage_aggregation":null,"unit_price":1500,"package_size":1,"tiers":null,"renewal_interval_unit":"year","renewal_interval_quantity":1,"trial_interval_unit":null,"trial_interval_quantity":null,"min_price":null,"suggested_price":null,"tax_code":"eservice","created_at":"2023-11-07T19:49:53.000000Z","updated_at":"2023-11-07T19:49:53.000000Z"},"relationships":{"variant":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/prices\/144600\/variant","self":"https:\/\/api.lemonsqueezy.com\/v1\/prices\/144600\/relationships\/variant"}}},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/prices\/144600"}},{"type":"prices","id":"144599","attributes":{"variant_id":149092,"category":"subscription","scheme":"standard","usage_aggregation":null,"unit_price":2000,"package_size":1,"tiers":null,"renewal_interval_unit":"month","renewal_interval_quantity":1,"trial_interval_unit":null,"trial_interval_quantity":null,"min_price":null,"suggested_price":null,"tax_code":"saas","created_at":"2023-11-07T19:48:36.000000Z","updated_at":"2023-11-07T21:52:04.000000Z"},"relationships":{"variant":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/prices\/144599\/variant","self":"https:\/\/api.lemonsqueezy.com\/v1\/prices\/144599\/relationships\/variant"}}},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/prices\/144599"}},{"type":"prices","id":"144598","attributes":{"variant_id":149092,"category":"one_time","scheme":"standard","usage_aggregation":null,"unit_price":999,"package_size":1,"tiers":null,"renewal_interval_unit":null,"renewal_interval_quantity":null,"trial_interval_unit":null,"trial_interval_quantity":null,"min_price":null,"suggested_price":null,"tax_code":"eservice","created_at":"2023-11-07T19:48:24.000000Z","updated_at":"2023-11-07T19:48:24.000000Z"},"relationships":{"variant":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/prices\/144598\/variant","self":"https:\/\/api.lemonsqueezy.com\/v1\/prices\/144598\/relationships\/variant"}}},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/prices\/144598"}},{"type":"prices","id":"144597","attributes":{"variant_id":149091,"category":"subscription","scheme":"standard","usage_aggregation":null,"unit_price":1000,"package_size":1,"tiers":null,"renewal_interval_unit":"month","renewal_interval_quantity":1,"trial_interval_unit":null,"trial_interval_quantity":null,"min_price":null,"suggested_price":null,"tax_code":"saas","created_at":"2023-11-07T19:48:16.000000Z","updated_at":"2023-11-07T21:51:07.000000Z"},"relationships":{"variant":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/prices\/144597\/variant","self":"https:\/\/api.lemonsqueezy.com\/v1\/prices\/144597\/relationships\/variant"}}},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/prices\/144597"}},{"type":"prices","id":"144596","attributes":{"variant_id":149091,"category":"one_time","scheme":"standard","usage_aggregation":null,"unit_price":999,"package_size":1,"tiers":null,"renewal_interval_unit":null,"renewal_interval_quantity":null,"trial_interval_unit":null,"trial_interval_quantity":null,"min_price":null,"suggested_price":null,"tax_code":"eservice","created_at":"2023-11-07T19:47:50.000000Z","updated_at":"2023-11-07T19:47:50.000000Z"},"relationships":{"variant":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/prices\/144596\/variant","self":"https:\/\/api.lemonsqueezy.com\/v1\/prices\/144596\/relationships\/variant"}}},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/prices\/144596"}},{"type":"prices","id":"144593","attributes":{"variant_id":149088,"category":"one_time","scheme":"standard","usage_aggregation":null,"unit_price":1000,"package_size":1,"tiers":null,"renewal_interval_unit":"year","renewal_interval_quantity":1,"trial_interval_unit":null,"trial_interval_quantity":null,"min_price":null,"suggested_price":null,"tax_code":"eservice","created_at":"2023-11-07T19:47:28.000000Z","updated_at":"2023-11-07T19:47:28.000000Z"},"relationships":{"variant":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/prices\/144593\/variant","self":"https:\/\/api.lemonsqueezy.com\/v1\/prices\/144593\/relationships\/variant"}}},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/prices\/144593"}},{"type":"prices","id":"144592","attributes":{"variant_id":149088,"category":"one_time","scheme":"standard","usage_aggregation":null,"unit_price":999,"package_size":1,"tiers":null,"renewal_interval_unit":null,"renewal_interval_quantity":null,"trial_interval_unit":null,"trial_interval_quantity":null,"min_price":null,"suggested_price":null,"tax_code":"eservice","created_at":"2023-11-07T19:47:08.000000Z","updated_at":"2023-11-07T19:47:08.000000Z"},"relationships":{"variant":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/prices\/144592\/variant","self":"https:\/\/api.lemonsqueezy.com\/v1\/prices\/144592\/relationships\/variant"}}},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/prices\/144592"}}]}'
+  recorded_at: Fri, 12 Jan 2024 19:35:40 GMT
+recorded_with: VCR 6.2.0

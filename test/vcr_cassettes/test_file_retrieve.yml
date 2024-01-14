@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.lemonsqueezy.com/v1/files/124195
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - lemonsqueezy/v0.2.2 (github.com/deanpcmad/lemonsqueezy)
+      Accept:
+      - application/vnd.api+json
+      Content-Type:
+      - application/vnd.api+json
+      Authorization:
+      - Bearer <AUTHORIZATION>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Sat, 13 Jan 2024 21:09:25 GMT
+      content-type:
+      - application/vnd.api+json
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      access-control-allow-origin:
+      - "*"
+      cache-control:
+      - no-cache, private
+      x-ratelimit-limit:
+      - '300'
+      x-ratelimit-remaining:
+      - '297'
+      apigw-requestid:
+      - RfxQ8gHYCYcEJCg=
+      cf-cache-status:
+      - DYNAMIC
+      report-to:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=roDDXsbQ%2B70PsTNQnzdwFuUx%2FSlALxR6fn1kni6Dzk4gxh2KMdNho5XqwB3rTMrfgi%2FSzOGhPNjQwscDrGmbH1eClRarOwHKx8daAYoRAPVYZTxhaCu2rYTt%2F5%2FUnqHdE%2BpFdFP3QQ%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      server:
+      - cloudflare
+      cf-ray:
+      - 84509ec24e824886-LHR
+      content-encoding:
+      - gzip
+      alt-svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"jsonapi":{"version":"1.0"},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/files\/124195"},"data":{"type":"files","id":"124195","attributes":{"variant_id":212481,"identifier":"e651f057-3812-48dd-8ec5-1a921a6f0123","name":"TDX8EYkZ8K.png","extension":"png","download_url":"https:\/\/app.lemonsqueezy.com\/download\/e651f057-3812-48dd-8ec5-1a921a6f0123?expires=1705183765&signature=49c55d7a9a34c28c898c27b8b828eef13700aa35ed4632ebbf9956c1f2f60018","size":7863,"size_formatted":"8
+        KB","version":null,"sort":1,"status":"published","createdAt":"2024-01-13T21:06:42.000000Z","updatedAt":"2024-01-13T21:06:45.000000Z","test_mode":true},"relationships":{"variant":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/files\/124195\/variant","self":"https:\/\/api.lemonsqueezy.com\/v1\/files\/124195\/relationships\/variant"}}},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/files\/124195"}}}'
+  recorded_at: Sat, 13 Jan 2024 21:09:26 GMT
+recorded_with: VCR 6.2.0

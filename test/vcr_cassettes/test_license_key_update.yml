@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: patch
+    uri: https://api.lemonsqueezy.com/v1/license-keys/384199
+    body:
+      encoding: UTF-8
+      string: '{"data":{"type":"license-keys","id":"384199","attributes":{"activation_limit":2}}}'
+    headers:
+      User-Agent:
+      - lemonsqueezy/v0.2.2 (github.com/deanpcmad/lemonsqueezy)
+      Accept:
+      - application/vnd.api+json
+      Content-Type:
+      - application/vnd.api+json
+      Authorization:
+      - Bearer <AUTHORIZATION>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Sat, 13 Jan 2024 21:36:41 GMT
+      content-type:
+      - application/vnd.api+json
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      cache-control:
+      - no-cache, private
+      x-ratelimit-limit:
+      - '300'
+      x-ratelimit-remaining:
+      - '294'
+      access-control-allow-origin:
+      - "*"
+      apigw-requestid:
+      - Rf1QciHTCYcEKqA=
+      cf-cache-status:
+      - DYNAMIC
+      report-to:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=CaD5bMOaFsiU0GI5jv1rLHYnqgkNTr%2BDtJa2WDk8Lvnx%2F0CFGJ2TzOyYeTakewZTH6AO5QpjQYTojslDpRnRudIzKxF3BBGIUfqSpsUaPSi5huoJIP3L1TKGqKCPFMfi%2BeBAtsLqZQ%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      server:
+      - cloudflare
+      cf-ray:
+      - 8450c6afb8213697-LHR
+      content-encoding:
+      - gzip
+      alt-svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"jsonapi":{"version":"1.0"},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/license-keys\/384199"},"data":{"type":"license-keys","id":"384199","attributes":{"store_id":51385,"customer_id":1584868,"order_id":1899988,"order_item_id":1861311,"product_id":166175,"user_name":"Dean
+        Dev","user_email":"dean@voupe.dev","key":"FD94CAF7-FD7A-4BA6-9ACC-5B266AAF84FF","key_short":"XXXX-5B266AAF84FF","activation_limit":2,"instances_count":0,"disabled":false,"status":"inactive","status_formatted":"Inactive","expires_at":"2025-01-12T19:08:57.000000Z","created_at":"2024-01-12T19:08:57.000000Z","updated_at":"2024-01-13T21:36:41.000000Z","test_mode":true},"relationships":{"store":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/license-keys\/384199\/store","self":"https:\/\/api.lemonsqueezy.com\/v1\/license-keys\/384199\/relationships\/store"}},"customer":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/license-keys\/384199\/customer","self":"https:\/\/api.lemonsqueezy.com\/v1\/license-keys\/384199\/relationships\/customer"}},"order":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/license-keys\/384199\/order","self":"https:\/\/api.lemonsqueezy.com\/v1\/license-keys\/384199\/relationships\/order"}},"order-item":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/license-keys\/384199\/order-item","self":"https:\/\/api.lemonsqueezy.com\/v1\/license-keys\/384199\/relationships\/order-item"}},"product":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/license-keys\/384199\/product","self":"https:\/\/api.lemonsqueezy.com\/v1\/license-keys\/384199\/relationships\/product"}},"license-key-instances":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/license-keys\/384199\/license-key-instances","self":"https:\/\/api.lemonsqueezy.com\/v1\/license-keys\/384199\/relationships\/license-key-instances"}}},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/license-keys\/384199"}}}'
+  recorded_at: Sat, 13 Jan 2024 21:36:41 GMT
+recorded_with: VCR 6.2.0

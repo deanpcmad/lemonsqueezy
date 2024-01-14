@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.lemonsqueezy.com/v1/orders
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - lemonsqueezy/v0.2.2 (github.com/deanpcmad/lemonsqueezy)
+      Accept:
+      - application/vnd.api+json
+      Content-Type:
+      - application/vnd.api+json
+      Authorization:
+      - Bearer <AUTHORIZATION>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Sat, 13 Jan 2024 19:56:49 GMT
+      content-type:
+      - application/vnd.api+json
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      access-control-allow-origin:
+      - "*"
+      cache-control:
+      - no-cache, private
+      x-ratelimit-limit:
+      - '300'
+      x-ratelimit-remaining:
+      - '298'
+      apigw-requestid:
+      - RfmoPgWjiYcEJ0Q=
+      cf-cache-status:
+      - DYNAMIC
+      report-to:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=TgG%2Bb0D6bMO2YJScwuG8WYP9X7DgHkVuNVNfrHifgP6Xwq3Cu8TPFzU3NphZh5vxbpCTA0Fv%2BA%2B8SOyVzKr37KG8KhGfEoj%2BEL2I5K8JaN3qHC021ZiRZrKhPbY7omESQqgrIS%2BpCg%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      server:
+      - cloudflare
+      cf-ray:
+      - 8450346769ad7321-LHR
+      content-encoding:
+      - gzip
+      alt-svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta":{"page":{"currentPage":1,"from":1,"lastPage":1,"perPage":10,"to":3,"total":3}},"jsonapi":{"version":"1.0"},"links":{"first":"https:\/\/api.lemonsqueezy.com\/v1\/orders?page%5Bnumber%5D=1&page%5Bsize%5D=10&sort=-createdAt","last":"https:\/\/api.lemonsqueezy.com\/v1\/orders?page%5Bnumber%5D=1&page%5Bsize%5D=10&sort=-createdAt"},"data":[{"type":"orders","id":"1899988","attributes":{"store_id":51385,"customer_id":1584868,"identifier":"08caeb7e-3c21-4e8a-a0bb-4cbf3e2659cf","order_number":513853,"user_name":"Dean
+        Dev","user_email":"dean@voupe.dev","currency":"GBP","currency_rate":"1.27487800","tax_name":"VAT","tax_rate":"20.00","status":"paid","status_formatted":"Paid","refunded":false,"refunded_at":null,"subtotal":999,"discount_total":0,"tax":200,"total":1199,"subtotal_usd":1274,"discount_total_usd":0,"tax_usd":255,"total_usd":1529,"subtotal_formatted":"\u00a39.99","discount_total_formatted":"\u00a30.00","tax_formatted":"\u00a32.00","total_formatted":"\u00a311.99","first_order_item":{"id":1861311,"order_id":1899988,"product_id":166175,"variant_id":211541,"price_id":233122,"product_name":"Test
+        License","variant_name":"Default","price":999,"quantity":1,"created_at":"2024-01-12T19:08:56.000000Z","updated_at":"2024-01-12T19:08:56.000000Z","test_mode":true},"urls":{"receipt":"https:\/\/app.lemonsqueezy.com\/my-orders\/08caeb7e-3c21-4e8a-a0bb-4cbf3e2659cf?signature=ae404f234e12ef16735c1c1c395efe5a32e06333ded7bb53cf3bca4148d77096"},"created_at":"2024-01-12T19:08:56.000000Z","updated_at":"2024-01-12T19:09:57.000000Z","test_mode":true},"relationships":{"store":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1899988\/store","self":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1899988\/relationships\/store"}},"customer":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1899988\/customer","self":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1899988\/relationships\/customer"}},"order-items":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1899988\/order-items","self":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1899988\/relationships\/order-items"}},"subscriptions":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1899988\/subscriptions","self":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1899988\/relationships\/subscriptions"}},"license-keys":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1899988\/license-keys","self":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1899988\/relationships\/license-keys"}},"discount-redemptions":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1899988\/discount-redemptions","self":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1899988\/relationships\/discount-redemptions"}}},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1899988"}},{"type":"orders","id":"1541086","attributes":{"store_id":51385,"customer_id":1584868,"identifier":"47869109-4660-49e8-84f5-e45759b2124b","order_number":2,"user_name":"Dean
+        Dev","user_email":"dean@voupe.dev","currency":"GBP","currency_rate":"1.22974600","tax_name":"VAT","tax_rate":"20.00","status":"paid","status_formatted":"Paid","refunded":false,"refunded_at":null,"subtotal":2000,"discount_total":0,"tax":400,"total":2400,"subtotal_usd":2459,"discount_total_usd":0,"tax_usd":492,"total_usd":2951,"subtotal_formatted":"\u00a320.00","discount_total_formatted":"\u00a30.00","tax_formatted":"\u00a34.00","total_formatted":"\u00a324.00","first_order_item":{"id":1503862,"order_id":1541086,"product_id":128225,"variant_id":149092,"price_id":144599,"product_name":"SaaS
+        Gold Plan","variant_name":"Default","price":2000,"quantity":1,"created_at":"2023-11-07T21:52:08.000000Z","updated_at":"2023-11-07T21:52:08.000000Z","test_mode":true},"urls":{"receipt":"https:\/\/app.lemonsqueezy.com\/my-orders\/47869109-4660-49e8-84f5-e45759b2124b?signature=f67f8a670a2518a1a063a240b860e9625b2d72f79675946ea7130226b89cc320"},"created_at":"2023-11-07T21:52:02.000000Z","updated_at":"2023-11-07T21:58:08.000000Z","test_mode":true},"relationships":{"store":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1541086\/store","self":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1541086\/relationships\/store"}},"customer":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1541086\/customer","self":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1541086\/relationships\/customer"}},"order-items":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1541086\/order-items","self":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1541086\/relationships\/order-items"}},"subscriptions":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1541086\/subscriptions","self":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1541086\/relationships\/subscriptions"}},"license-keys":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1541086\/license-keys","self":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1541086\/relationships\/license-keys"}},"discount-redemptions":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1541086\/discount-redemptions","self":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1541086\/relationships\/discount-redemptions"}}},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1541086"}},{"type":"orders","id":"1541082","attributes":{"store_id":51385,"customer_id":1584868,"identifier":"c5c48c17-6c8c-45d2-bcdb-9f334226937a","order_number":1,"user_name":"Dean
+        Dev","user_email":"dean@voupe.dev","currency":"GBP","currency_rate":"1.22974600","tax_name":"VAT","tax_rate":"20.00","status":"paid","status_formatted":"Paid","refunded":false,"refunded_at":null,"subtotal":1000,"discount_total":0,"tax":200,"total":1200,"subtotal_usd":1230,"discount_total_usd":0,"tax_usd":246,"total_usd":1476,"subtotal_formatted":"\u00a310.00","discount_total_formatted":"\u00a30.00","tax_formatted":"\u00a32.00","total_formatted":"\u00a312.00","first_order_item":{"id":1503859,"order_id":1541082,"product_id":128224,"variant_id":149091,"price_id":144597,"product_name":"SaaS
+        Silver Plan","variant_name":"Default","price":1000,"quantity":1,"created_at":"2023-11-07T21:51:11.000000Z","updated_at":"2023-11-07T21:51:11.000000Z","test_mode":true},"urls":{"receipt":"https:\/\/app.lemonsqueezy.com\/my-orders\/c5c48c17-6c8c-45d2-bcdb-9f334226937a?signature=0ad2d23ae9723dd88032cd808c4b6a06125be28ae0b3c5cde20d123cba502f91"},"created_at":"2023-11-07T21:51:05.000000Z","updated_at":"2023-11-07T21:57:12.000000Z","test_mode":true},"relationships":{"store":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1541082\/store","self":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1541082\/relationships\/store"}},"customer":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1541082\/customer","self":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1541082\/relationships\/customer"}},"order-items":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1541082\/order-items","self":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1541082\/relationships\/order-items"}},"subscriptions":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1541082\/subscriptions","self":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1541082\/relationships\/subscriptions"}},"license-keys":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1541082\/license-keys","self":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1541082\/relationships\/license-keys"}},"discount-redemptions":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1541082\/discount-redemptions","self":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1541082\/relationships\/discount-redemptions"}}},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/orders\/1541082"}}]}'
+  recorded_at: Sat, 13 Jan 2024 19:56:50 GMT
+recorded_with: VCR 6.2.0

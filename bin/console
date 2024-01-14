@@ -14,7 +14,9 @@ require 'dotenv/load'
 # require "pry"
 # Pry.start
 
-@client = LemonSqueezy::Client.new(access_token: ENV["ACCESS_TOKEN"])
+LemonSqueezy.configure do |config|
+  config.api_key = ENV["LEMON_SQUEEZY_API_KEY"]
+end
 
 require "irb"
 IRB.start(__FILE__)

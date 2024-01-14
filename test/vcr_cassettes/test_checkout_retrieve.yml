@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.lemonsqueezy.com/v1/checkouts/ffba2628-bd02-4d2f-989f-fb690e8a852d
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - lemonsqueezy/v0.2.2 (github.com/deanpcmad/lemonsqueezy)
+      Accept:
+      - application/vnd.api+json
+      Content-Type:
+      - application/vnd.api+json
+      Authorization:
+      - Bearer <AUTHORIZATION>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Sun, 14 Jan 2024 14:29:23 GMT
+      content-type:
+      - application/vnd.api+json
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      x-ratelimit-limit:
+      - '300'
+      x-ratelimit-remaining:
+      - '299'
+      access-control-allow-origin:
+      - "*"
+      cache-control:
+      - no-cache, private
+      apigw-requestid:
+      - RiJmhj2ICYcEMkg=
+      cf-cache-status:
+      - DYNAMIC
+      report-to:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=IMexc31xbCAQxOw6m3FxauXoSjarjVJOvLE8M1a7hRIAzOxJgXkzMRsQfMzUm1%2BcrkX8iNn6f06rdWchlYmi51Orhg82zlqDQfo48kNFpJiQS9MByr9jfw10fe%2FwpCaI%2FLH2c68zfw%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      server:
+      - cloudflare
+      cf-ray:
+      - 84569222dcff79c9-LHR
+      content-encoding:
+      - gzip
+      alt-svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"jsonapi":{"version":"1.0"},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/checkouts\/ffba2628-bd02-4d2f-989f-fb690e8a852d"},"data":{"type":"checkouts","id":"ffba2628-bd02-4d2f-989f-fb690e8a852d","attributes":{"store_id":51385,"variant_id":149091,"custom_price":null,"product_options":{"name":"","description":"","media":[],"redirect_url":"","receipt_button_text":"","receipt_link_url":"","receipt_thank_you_note":"","enabled_variants":[],"confirmation_title":"","confirmation_message":"","confirmation_button_text":""},"checkout_options":{"embed":false,"media":true,"logo":true,"desc":true,"discount":true,"quantity":1,"dark":false,"subscription_preview":true,"button_color":"#7047EB"},"checkout_data":{"email":"","name":"","billing_address":[],"tax_number":"","discount_code":"","custom":[],"variant_quantities":[]},"preview":false,"expires_at":null,"created_at":"2024-01-14T14:27:36.000000Z","updated_at":"2024-01-14T14:27:36.000000Z","test_mode":true,"url":"https:\/\/voupedev.lemonsqueezy.com\/checkout\/custom\/ffba2628-bd02-4d2f-989f-fb690e8a852d?signature=687ab31ea5c0cc52098c3643772d130bdc88b4f398b591b2d789aba583390536"},"relationships":{"store":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/checkouts\/ffba2628-bd02-4d2f-989f-fb690e8a852d\/store","self":"https:\/\/api.lemonsqueezy.com\/v1\/checkouts\/ffba2628-bd02-4d2f-989f-fb690e8a852d\/relationships\/store"}},"variant":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/checkouts\/ffba2628-bd02-4d2f-989f-fb690e8a852d\/variant","self":"https:\/\/api.lemonsqueezy.com\/v1\/checkouts\/ffba2628-bd02-4d2f-989f-fb690e8a852d\/relationships\/variant"}}},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/checkouts\/ffba2628-bd02-4d2f-989f-fb690e8a852d"}}}'
+  recorded_at: Sun, 14 Jan 2024 14:29:22 GMT
+recorded_with: VCR 6.2.0
