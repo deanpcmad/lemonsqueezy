@@ -34,6 +34,7 @@ module LemonSqueezy
   autoload :SubscriptionItem, "lemon_squeezy/models/subscription_item"
   autoload :SubscriptionUsage, "lemon_squeezy/models/subscription_usage"
   autoload :Discount, "lemon_squeezy/models/discount"
+  autoload :DiscountRedemption, "lemon_squeezy/models/discount_redemption"
   autoload :License, "lemon_squeezy/models/license"
   autoload :LicenseKey, "lemon_squeezy/models/license_key"
   autoload :LicenseKeyInstance, "lemon_squeezy/models/license_key_instance"

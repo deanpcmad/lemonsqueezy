@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.lemonsqueezy.com/v1/discount-redemptions/170576
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - lemonsqueezy/v0.2.2 (github.com/deanpcmad/lemonsqueezy)
+      Accept:
+      - application/vnd.api+json
+      Content-Type:
+      - application/vnd.api+json
+      Authorization:
+      - Bearer <AUTHORIZATION>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Sun, 14 Jan 2024 14:23:20 GMT
+      content-type:
+      - application/vnd.api+json
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      access-control-allow-origin:
+      - "*"
+      cache-control:
+      - no-cache, private
+      x-ratelimit-limit:
+      - '300'
+      x-ratelimit-remaining:
+      - '299'
+      apigw-requestid:
+      - RiIt6hY3iYcEMiw=
+      cf-cache-status:
+      - DYNAMIC
+      report-to:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=c%2BDtB8t9Tur6loFx1zhAXfGrxY6m%2FJkLmKNQ%2FHzgsEfw1kUj9FMyKf7NXq7tuBzUW7Kd25j%2BMG9XINtnnJkXeay4q90nZx8lUYZLtAlEW2aYTIxy%2FHUpGhLbBDMa8knsHPv7%2FXeLuw%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      server:
+      - cloudflare
+      cf-ray:
+      - 8456894a5a2523d3-LHR
+      content-encoding:
+      - gzip
+      alt-svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"jsonapi":{"version":"1.0"},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/discount-redemptions\/170576"},"data":{"type":"discount-redemptions","id":"170576","attributes":{"discount_id":80554,"order_id":1907731,"discount_name":"10%
+        Off","discount_code":"10OFF","discount_amount":10,"discount_amount_type":"percent","amount":100,"created_at":"2024-01-14T14:20:44.000000Z","updated_at":"2024-01-14T14:20:44.000000Z"},"relationships":{"discount":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/discount-redemptions\/170576\/discount","self":"https:\/\/api.lemonsqueezy.com\/v1\/discount-redemptions\/170576\/relationships\/discount"}},"order":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/discount-redemptions\/170576\/order","self":"https:\/\/api.lemonsqueezy.com\/v1\/discount-redemptions\/170576\/relationships\/order"}}},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/discount-redemptions\/170576"}}}'
+  recorded_at: Sun, 14 Jan 2024 14:23:20 GMT
+recorded_with: VCR 6.2.0
