@@ -5,12 +5,12 @@ module LemonSqueezy
 
       def list(**params)
         response = Client.get_request("checkouts", params: {filter: params})
-        Collection.from_response(response, type: Customer)
+        Collection.from_response(response, type: Checkout)
       end
 
       def retrieve(id:)
         response = Client.get_request("checkouts/#{id}")
-        Customer.new(response.body["data"]) if response.success?
+        Checkout.new(response.body["data"]) if response.success?
       end
 
       def create(store_id:, variant_id:, **attrs)

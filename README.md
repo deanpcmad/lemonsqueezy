@@ -255,7 +255,6 @@ LemonSqueezy::License.activate key: "abc123-abc123-abc123", instance: "Activatio
 LemonSqueezy::License.deactivate key: "abc123-abc123-abc123", instance: "abc123"
 ```
 
-
 ### License Keys
 
 ```ruby
