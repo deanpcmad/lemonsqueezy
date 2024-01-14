@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.lemonsqueezy.com/v1/license-key-instances?filter%5Blicense_key_id%5D=385359
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - lemonsqueezy/v0.2.2 (github.com/deanpcmad/lemonsqueezy)
+      Accept:
+      - application/vnd.api+json
+      Content-Type:
+      - application/vnd.api+json
+      Authorization:
+      - Bearer <AUTHORIZATION>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Sun, 14 Jan 2024 14:10:51 GMT
+      content-type:
+      - application/vnd.api+json
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      cache-control:
+      - no-cache, private
+      x-ratelimit-limit:
+      - '300'
+      x-ratelimit-remaining:
+      - '299'
+      access-control-allow-origin:
+      - "*"
+      apigw-requestid:
+      - RiG40hc3CYcEJ0g=
+      cf-cache-status:
+      - DYNAMIC
+      report-to:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=iIDq9kACFEseTPKX9xOYgMtSgsH6zka9A48Bj7RXNXfxDPzzKQnJRfZ8%2Fj9pDu1AueI5CEL3Rewh0%2FXqvpdIaAhyDZVCCgty%2FOJ7FvXT5ZmD5p%2BmuM5GpqXsKztnaeNRI%2BpO5Z9%2BRg%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      server:
+      - cloudflare
+      cf-ray:
+      - 845676feba8f653a-LHR
+      content-encoding:
+      - gzip
+      alt-svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta":{"page":{"currentPage":1,"from":1,"lastPage":1,"perPage":10,"to":5,"total":5}},"jsonapi":{"version":"1.0"},"links":{"first":"https:\/\/api.lemonsqueezy.com\/v1\/license-key-instances?filter%5Blicense_key_id%5D=385359&page%5Bnumber%5D=1&page%5Bsize%5D=10&sort=id","last":"https:\/\/api.lemonsqueezy.com\/v1\/license-key-instances?filter%5Blicense_key_id%5D=385359&page%5Bnumber%5D=1&page%5Bsize%5D=10&sort=id"},"data":[{"type":"license-key-instances","id":"707185","attributes":{"license_key_id":385359,"identifier":"af8b8448-140f-4c82-8a32-7914ddf7c0f1","name":"Test1","created_at":"2024-01-14T14:06:08.000000Z","updated_at":"2024-01-14T14:06:08.000000Z"},"relationships":{"license-key":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/license-key-instances\/707185\/license-key","self":"https:\/\/api.lemonsqueezy.com\/v1\/license-key-instances\/707185\/relationships\/license-key"}}},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/license-key-instances\/707185"}},{"type":"license-key-instances","id":"707186","attributes":{"license_key_id":385359,"identifier":"5ec90ac5-caa5-4452-9482-9cd6e40a8bcf","name":"Test2","created_at":"2024-01-14T14:06:19.000000Z","updated_at":"2024-01-14T14:06:19.000000Z"},"relationships":{"license-key":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/license-key-instances\/707186\/license-key","self":"https:\/\/api.lemonsqueezy.com\/v1\/license-key-instances\/707186\/relationships\/license-key"}}},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/license-key-instances\/707186"}},{"type":"license-key-instances","id":"707187","attributes":{"license_key_id":385359,"identifier":"9f0d845b-9cdf-4e22-836e-b68d98153e5e","name":"Test3","created_at":"2024-01-14T14:06:21.000000Z","updated_at":"2024-01-14T14:06:21.000000Z"},"relationships":{"license-key":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/license-key-instances\/707187\/license-key","self":"https:\/\/api.lemonsqueezy.com\/v1\/license-key-instances\/707187\/relationships\/license-key"}}},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/license-key-instances\/707187"}},{"type":"license-key-instances","id":"707188","attributes":{"license_key_id":385359,"identifier":"24cb0bdd-99a8-4fd6-8e8f-ac1f4f617542","name":"Test4","created_at":"2024-01-14T14:06:22.000000Z","updated_at":"2024-01-14T14:06:22.000000Z"},"relationships":{"license-key":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/license-key-instances\/707188\/license-key","self":"https:\/\/api.lemonsqueezy.com\/v1\/license-key-instances\/707188\/relationships\/license-key"}}},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/license-key-instances\/707188"}},{"type":"license-key-instances","id":"707189","attributes":{"license_key_id":385359,"identifier":"6746fddc-fda5-4a02-9deb-28e9f3c91e41","name":"Test5","created_at":"2024-01-14T14:06:23.000000Z","updated_at":"2024-01-14T14:06:23.000000Z"},"relationships":{"license-key":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/license-key-instances\/707189\/license-key","self":"https:\/\/api.lemonsqueezy.com\/v1\/license-key-instances\/707189\/relationships\/license-key"}}},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/license-key-instances\/707189"}}]}'
+  recorded_at: Sun, 14 Jan 2024 14:10:51 GMT
+recorded_with: VCR 6.2.0

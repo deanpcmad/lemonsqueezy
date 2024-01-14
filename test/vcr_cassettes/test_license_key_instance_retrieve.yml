@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.lemonsqueezy.com/v1/license-key-instances/707185
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - lemonsqueezy/v0.2.2 (github.com/deanpcmad/lemonsqueezy)
+      Accept:
+      - application/vnd.api+json
+      Content-Type:
+      - application/vnd.api+json
+      Authorization:
+      - Bearer <AUTHORIZATION>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Sun, 14 Jan 2024 14:10:51 GMT
+      content-type:
+      - application/vnd.api+json
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      x-ratelimit-limit:
+      - '300'
+      x-ratelimit-remaining:
+      - '298'
+      access-control-allow-origin:
+      - "*"
+      cache-control:
+      - no-cache, private
+      apigw-requestid:
+      - RiG43iPMiYcEP3g=
+      cf-cache-status:
+      - DYNAMIC
+      report-to:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=6Wjx1jY7F52I4GCT5rlzU0Td0eoT%2BkCHqeyXi6ij5NoQrvojUHXG1GEk3ZuTxFsLN2U196hjE%2FF0k0evu14OAz1H29Gs5uH0ZzsP98g%2FE%2FeQASV%2Bhw55Fs4SHnP10w%2BvRw27yJwocg%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      server:
+      - cloudflare
+      cf-ray:
+      - 84567700aed552cc-LHR
+      content-encoding:
+      - gzip
+      alt-svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"jsonapi":{"version":"1.0"},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/license-key-instances\/707185"},"data":{"type":"license-key-instances","id":"707185","attributes":{"license_key_id":385359,"identifier":"af8b8448-140f-4c82-8a32-7914ddf7c0f1","name":"Test1","created_at":"2024-01-14T14:06:08.000000Z","updated_at":"2024-01-14T14:06:08.000000Z"},"relationships":{"license-key":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/license-key-instances\/707185\/license-key","self":"https:\/\/api.lemonsqueezy.com\/v1\/license-key-instances\/707185\/relationships\/license-key"}}},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/license-key-instances\/707185"}}}'
+  recorded_at: Sun, 14 Jan 2024 14:10:51 GMT
+recorded_with: VCR 6.2.0
