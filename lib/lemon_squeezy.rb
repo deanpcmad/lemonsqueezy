@@ -42,5 +42,6 @@ module LemonSqueezy
   autoload :Customer, "lemon_squeezy/models/customer"
   autoload :Checkout, "lemon_squeezy/models/checkout"
   autoload :Price, "lemon_squeezy/models/price"
+  autoload :Webhook, "lemon_squeezy/models/webhook"
 
 end

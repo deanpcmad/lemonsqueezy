@@ -320,6 +320,30 @@ LemonSqeezy::Checkout.retrieve id: 123
 LemonSqueezy::Checkout.create store_id: 123, variant_id: 321, custom_price: 500, product_options: {name: "a test name"}
 ```
 
+### Webhooks
+
+```ruby
+# List all Webhooks
+LemonSqueezy::Webhook.list
+
+# List all Webhooks for a Store
+LemonSqueezy::Webhook.list store_id: 123
+
+# Retrieve a Webhook
+LemonSqueezy::Webhook.retrieve id: 123
+
+# Create a Webhook
+# https://docs.lemonsqueezy.com/api/webhooks#create-a-webhook
+LemonSqueezy::Webhook.create store_id: 123, url: "", secret: "abc", events: ["order_created"]
+
+# Update a Webhook
+# https://docs.lemonsqueezy.com/api/webhooks#update-a-webhook
+LemonSqueezy::Webhook.update id: 123, events: ["order_created", "subscription_created"]
+
+# Delete a Webhook
+LemonSqueezy::Webhook.delete id: 123
+```
+
 
 ## Contributing
 

@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: delete
+    uri: https://api.lemonsqueezy.com/v1/webhooks/11630
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - lemonsqueezy/v0.2.2 (github.com/deanpcmad/lemonsqueezy)
+      Accept:
+      - application/vnd.api+json
+      Content-Type:
+      - application/vnd.api+json
+      Authorization:
+      - Bearer <AUTHORIZATION>
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      date:
+      - Sun, 14 Jan 2024 14:40:31 GMT
+      connection:
+      - keep-alive
+      x-ratelimit-limit:
+      - '300'
+      x-ratelimit-remaining:
+      - '299'
+      access-control-allow-origin:
+      - "*"
+      cache-control:
+      - no-cache, private
+      apigw-requestid:
+      - RiLO3iHSCYcEPSQ=
+      cf-cache-status:
+      - DYNAMIC
+      report-to:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=RnZpgHoR16tJWarreemVfBfdNUqGawDgIdWspMEY1HgzghxsssFFWgINvjZfIH3jVsMxh5s8jRH4xHNEhUNiHYUdkYf1613nKyC%2B4KHSpFJ5Ef59CvBeSymbob6pG%2BoKJYxoJsuKVA%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      server:
+      - cloudflare
+      cf-ray:
+      - 8456a26f2e44dc39-LHR
+      alt-svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Sun, 14 Jan 2024 14:40:30 GMT
+recorded_with: VCR 6.2.0

@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: patch
+    uri: https://api.lemonsqueezy.com/v1/webhooks/11630
+    body:
+      encoding: UTF-8
+      string: '{"data":{"type":"webhooks","id":"11630","attributes":{"events":["order_created","subscription_created"]}}}'
+    headers:
+      User-Agent:
+      - lemonsqueezy/v0.2.2 (github.com/deanpcmad/lemonsqueezy)
+      Accept:
+      - application/vnd.api+json
+      Content-Type:
+      - application/vnd.api+json
+      Authorization:
+      - Bearer <AUTHORIZATION>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Sun, 14 Jan 2024 14:38:03 GMT
+      content-type:
+      - application/vnd.api+json
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      x-ratelimit-remaining:
+      - '299'
+      access-control-allow-origin:
+      - "*"
+      cache-control:
+      - no-cache, private
+      x-ratelimit-limit:
+      - '300'
+      apigw-requestid:
+      - RiK31iKZiYcEM0g=
+      cf-cache-status:
+      - DYNAMIC
+      report-to:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=1%2F9mJNZhWh2Z0ZZek3niJ%2FWpkrpYtV0o%2FDEYbH000YUCMerh6%2B2BklMoxF7RNTLg70c4gO6lEOaiukE0%2FNEgWIzACEIV27idvB8DrEXS5hflPawWySqtXNqg%2FPYRAPU2Z2aJxPVUZA%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      server:
+      - cloudflare
+      cf-ray:
+      - 84569ed6ff216331-LHR
+      content-encoding:
+      - gzip
+      alt-svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"jsonapi":{"version":"1.0"},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/webhooks\/11630"},"data":{"type":"webhooks","id":"11630","attributes":{"store_id":51385,"url":"http:\/\/localhost:3000\/webhook","events":["order_created","subscription_created"],"last_sent_at":null,"created_at":"2024-01-14T14:36:30.000000Z","updated_at":"2024-01-14T14:38:03.000000Z","test_mode":true},"relationships":{"store":{"links":{"related":"https:\/\/api.lemonsqueezy.com\/v1\/webhooks\/11630\/store","self":"https:\/\/api.lemonsqueezy.com\/v1\/webhooks\/11630\/relationships\/store"}}},"links":{"self":"https:\/\/api.lemonsqueezy.com\/v1\/webhooks\/11630"}}}'
+  recorded_at: Sun, 14 Jan 2024 14:38:03 GMT
+recorded_with: VCR 6.2.0
