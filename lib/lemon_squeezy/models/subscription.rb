@@ -77,14 +77,16 @@ module LemonSqueezy
         Subscription.new(response.body["data"]) if response.success?
       end
 
-      def change_plan(id:, plan_id:, variant_id:)
+      def change_plan(id:, plan_id:, variant_id:, invoice_immediately: false, disable_prorations: false)
         body = {
           data: {
             type: "subscriptions",
             id: id.to_s,
             attributes: {
               product_id: plan_id,
-              variant_id: variant_id
+              variant_id: variant_id,
+              invoice_immediately: invoice_immediately,
+              disable_prorations: disable_prorations
             }
           }
         }
