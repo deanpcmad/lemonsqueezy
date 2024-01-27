@@ -159,7 +159,8 @@ LemonSqueezy::Subscription.cancel id: 123
 LemonSqueezy::Subscription.uncancel id: 123
 
 # Change the Plan for a Subscription
-LemonSqueezy::Subscription.change_plan id: 123, plan_id: 111, variant_id: 111
+# invoice_immediately and disable_prorations are optional and false by default.
+LemonSqueezy::Subscription.change_plan id: 123, plan_id: 111, variant_id: 111, invoice_immediately: false, disable_prorations: false
 ```
 
 ### Subscription Invoices
