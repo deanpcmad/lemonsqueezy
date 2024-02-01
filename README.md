@@ -301,16 +301,16 @@ LemonSqueezy::File.retrieve id: 123
 
 ```ruby
 # Retrieves a list of Checkouts
-LemonSqeezy::Checkout.list
+LemonSqueezy::Checkout.list
 
 # Retrieves a list of Checkouts for a store
-LemonSqeezy::Checkout.list store_id: 123
+LemonSqueezy::Checkout.list store_id: 123
 
 # Retrieves a list of Checkouts for a variant
-LemonSqeezy::Checkout.list variant_id: 123
+LemonSqueezy::Checkout.list variant_id: 123
 
 # Retrieves a Checkout
-LemonSqeezy::Checkout.retrieve id: 123
+LemonSqueezy::Checkout.retrieve id: 123
 
 # Creates a Checkout
 # View docs for more info: https://docs.lemonsqueezy.com/api/checkouts#create-a-checkout
@@ -342,7 +342,6 @@ LemonSqueezy::Webhook.update id: 123, events: ["order_created", "subscription_cr
 # Delete a Webhook
 LemonSqueezy::Webhook.delete id: 123
 ```
-
 
 ## Contributing
 
