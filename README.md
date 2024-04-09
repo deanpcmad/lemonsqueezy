@@ -193,7 +193,8 @@ LemonSqueezy::SubscriptionItem.retrieve id: 123
 
 # Updates a Subscription Item
 # https://docs.lemonsqueezy.com/api/subscription-items#update-a-subscription-item
-LemonSqueezy::SubscriptionItem.update id: 123, quantity: 2
+# invoice_immediately and disable_prorations are optional and false by default.
+LemonSqueezy::SubscriptionItem.update id: 123, quantity: 2, invoice_immediately: false, disable_prorations: false
 
 # Retrieve subscription item's current usage
 # Returns 404 if the product/variant does not have usage based billing enabled

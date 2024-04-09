@@ -18,13 +18,15 @@ module LemonSqueezy
         SubscriptionUsage.new(response.body["meta"]) if response.success?
       end
 
-      def update(id:, quantity:)
+      def update(id:, quantity:, invoice_immediately: false, disable_prorations: false)
         body = {
           data: {
             type: "subscription-items",
             id: id.to_s,
             attributes: {
-              quantity: quantity
+              quantity: quantity,
+              invoice_immediately: invoice_immediately,
+              disable_prorations: disable_prorations
             }
           }
         }
