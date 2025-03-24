@@ -19,6 +19,7 @@ Firstly you'll need to create an API Key on your [settings page](https://app.lem
 ```ruby
 LemonSqueezy.configure do |config|
   config.api_key = ENV["LEMON_SQUEEZY_API_KEY"]
+  config.default_page_size = 10 # Optional: Set default page size for paginated requests
 end
 ```
 
@@ -341,6 +342,26 @@ LemonSqueezy::Webhook.update id: 123, events: ["order_created", "subscription_cr
 
 # Delete a Webhook
 LemonSqueezy::Webhook.delete id: 123
+```
+
+### Pagination
+
+All list methods support pagination. You can control pagination in two ways:
+
+1. Using the default page size in configuration:
+```ruby
+LemonSqueezy.configure do |config|
+  config.default_page_size = 10 # This will be used for all list requests
+end
+```
+
+2. Using pagination parameters in individual requests:
+```ruby
+# Get first page with 20 items
+customers = LemonSqueezy::Customer.list(page: { size: 20, number: 1 })
+
+# Get next page
+next_page_customers = LemonSqueezy::Customer.list(page: { size: 20, number: 2 })
 ```
 
 ## Contributing

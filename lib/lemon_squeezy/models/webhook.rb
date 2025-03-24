@@ -4,7 +4,7 @@ module LemonSqueezy
     class << self
 
       def list(**params)
-        response = Client.get_request("webhooks", params: {filter: params})
+        response = Client.get_request("webhooks", params: params)
         Collection.from_response(response, type: Webhook)
       end
 
