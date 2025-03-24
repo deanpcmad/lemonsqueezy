@@ -4,7 +4,7 @@ module LemonSqueezy
     class << self
 
       def list(**params)
-        response = Client.get_request("subscription-invoices", params: params)
+        response = Client.get_request("subscription-invoices", params: Client.build_list_request_params(params))
         Collection.from_response(response, type: SubscriptionInvoice)
       end
 
