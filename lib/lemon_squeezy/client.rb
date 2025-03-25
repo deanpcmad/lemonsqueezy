@@ -1,8 +1,7 @@
 module LemonSqueezy
   class Client
-
     class << self
-
+      
       def connection
         @connection ||= Faraday.new("https://api.lemonsqueezy.com/v1") do |conn|
           conn.request :authorization, :Bearer, LemonSqueezy.config.api_key
@@ -18,7 +17,7 @@ module LemonSqueezy
           conn.response :json
         end
       end
-
+      
       def get_request(url, params: {}, headers: {})
         handle_response connection.get(url, params, headers)
       end
@@ -34,7 +33,7 @@ module LemonSqueezy
       def delete_request(url, headers: {})
         handle_response connection.delete(url, headers)
       end
-
+      
       def handle_response(response)
         case response.status
         when 400
@@ -68,7 +67,18 @@ module LemonSqueezy
         response
       end
 
-    end
+      def build_list_request_params(params)
+        filter_params = params.reject { |k, _| k == :page }
+        pagination_params = params[:page] || {}
+        pagination_params[:size] = LemonSqueezy.config.default_page_size if pagination_params[:size].nil?
 
+        request_params = {}
+        request_params[:filter] = filter_params unless filter_params.empty?
+        request_params[:page] = pagination_params unless pagination_params.empty?
+        request_params
+      end
+      
+    end
+    
   end
 end

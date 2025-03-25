@@ -3,8 +3,8 @@ module LemonSqueezy
 
     class << self
 
-      def list
-        response = Client.get_request("stores")
+      def list(**params)
+        response = Client.get_request("stores", params: Client.build_list_request_params(params))
         Collection.from_response(response, type: Store)
       end
 

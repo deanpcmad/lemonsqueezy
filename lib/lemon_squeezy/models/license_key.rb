@@ -4,7 +4,7 @@ module LemonSqueezy
     class << self
 
       def list(**params)
-        response = Client.get_request("license-keys", params: {filter: params})
+        response = Client.get_request("license-keys", params: Client.build_list_request_params(params))
         Collection.from_response(response, type: LicenseKey)
       end
 
