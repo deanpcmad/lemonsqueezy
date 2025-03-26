@@ -7,6 +7,7 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
+    base64 (0.2.0)
     dotenv (2.8.1)
     faraday (2.9.0)
       faraday-net_http (>= 2.0, < 3.2)
@@ -24,6 +25,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  base64
   dotenv
   lemonsqueezy!
   minitest (~> 5.0)

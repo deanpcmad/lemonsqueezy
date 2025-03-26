@@ -13,3 +13,4 @@ gem "vcr"
 
 # Ruby 3.4
 gem "mutex_m"
+gem "base64"
