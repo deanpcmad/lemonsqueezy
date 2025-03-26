@@ -16,7 +16,7 @@ GEM
     net-http (0.4.1)
       uri
     rake (13.1.0)
-    uri (0.13.0)
+    uri (0.13.2)
     vcr (6.2.0)
 
 PLATFORMS
