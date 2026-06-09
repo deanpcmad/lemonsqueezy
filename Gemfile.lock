@@ -3,34 +3,62 @@ PATH
   specs:
     lemonsqueezy (1.1.0)
       faraday (~> 2.0)
+      ostruct (~> 0.6)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    base64 (0.2.0)
+    base64 (0.3.0)
+    date (3.5.1)
     dotenv (2.8.1)
-    faraday (2.12.2)
+    erb (6.0.1)
+    faraday (2.14.0)
       faraday-net_http (>= 2.0, < 3.5)
       json
       logger
     faraday-net_http (3.4.0)
       net-http (>= 0.5.0)
+    io-console (0.8.2)
+    irb (1.16.0)
+      pp (>= 0.6.0)
+      rdoc (>= 4.0.0)
+      reline (>= 0.4.2)
     json (2.10.2)
     logger (1.6.6)
-    minitest (5.20.0)
+    minitest (5.27.0)
     mutex_m (0.3.0)
     net-http (0.6.0)
       uri
+    ostruct (0.6.3)
+    pp (0.6.3)
+      prettyprint
+    prettyprint (0.2.0)
+    psych (5.3.1)
+      date
+      stringio
+    rake (13.3.1)
+    rdoc (7.1.0)
+      erb
+      psych (>= 4.0.0)
+      tsort
+    reline (0.6.3)
+      io-console (~> 0.5)
+    stringio (3.2.0)
+    tsort (0.2.0)
+    uri (1.0.3)
+    vcr (6.4.0)
     rake (13.1.0)
     uri (1.0.4)
     vcr (6.2.0)
 
 PLATFORMS
+  arm64-darwin-24
   x86_64-linux
 
 DEPENDENCIES
   base64
   dotenv
+  irb
   lemonsqueezy!
   minitest (~> 5.0)
   mutex_m
