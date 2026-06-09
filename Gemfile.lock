@@ -47,6 +47,9 @@ GEM
     tsort (0.2.0)
     uri (1.0.3)
     vcr (6.4.0)
+    rake (13.1.0)
+    uri (1.0.4)
+    vcr (6.2.0)
 
 PLATFORMS
   arm64-darwin-24
